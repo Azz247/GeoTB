@@ -1,0 +1,16 @@
+pandoc: 3.1.1
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  Geological_data_2562: Geological_data_2562.html
+  Geological_data_2563: Geological_data_2563.html
+  Geological_data_2564: Geological_data_2564.html
+  Geological_data_2565: Geological_data_2565.html
+  Geological_data_2566: Geological_data_2566.html
+  Subdistrict_data_2562: Subdistrict_data_2562.html
+  Subdistrict_data_2563: Subdistrict_data_2563.html
+  Subdistrict_data_2564: Subdistrict_data_2564.html
+  Subdistrict_data_2565: Subdistrict_data_2565.html
+  Subdistrict_data_2566: Subdistrict_data_2566.html
+last_built: 2024-02-19T13:23Z
+
