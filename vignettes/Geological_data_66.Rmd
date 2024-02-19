@@ -35,8 +35,4 @@ htmltools::HTML('<style>
 <iframe src="https://azz247.github.io/Geo_TB/SubdistrictMap66">
 </iframe>
 </div>')
-=======
-```{r setup}
-library(GeoTB)
->>>>>>> c468b5d5ebd0af32eb8d271d268119d02e4404f1
 ```

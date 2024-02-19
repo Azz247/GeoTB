@@ -22,42 +22,63 @@
     <loc>/articles/index.html</loc>
   </url>
   <url>
+    <loc>/articles/Subdistrict_data_62.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Subdistrict_data_63.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Subdistrict_data_64.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Subdistrict_data_65.html</loc>
+  </url>
+  <url>
+    <loc>/articles/Subdistrict_data_66.html</loc>
+  </url>
+  <url>
+    <loc>/articles/test.html</loc>
+  </url>
+  <url>
     <loc>/authors.html</loc>
   </url>
   <url>
     <loc>/index.html</loc>
   </url>
   <url>
-    <loc>/MapGeo62.html</loc>
-  </url>
-  <url>
-    <loc>/MapGeo63.html</loc>
-  </url>
-  <url>
-    <loc>/MapGeo64.html</loc>
-  </url>
-  <url>
-    <loc>/MapGeo65.html</loc>
-  </url>
-  <url>
-    <loc>/MapGeo66.html</loc>
-  </url>
-  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>/SubdistrictMap_62.html</loc>
+    <loc>/root/MapGeo62.html</loc>
   </url>
   <url>
-    <loc>/SubdistrictMap_63.html</loc>
+    <loc>/root/MapGeo63.html</loc>
   </url>
   <url>
-    <loc>/SubdistrictMap_64.html</loc>
+    <loc>/root/MapGeo64.html</loc>
   </url>
   <url>
-    <loc>/SubdistrictMap_65.html</loc>
+    <loc>/root/MapGeo65.html</loc>
   </url>
   <url>
-    <loc>/SubdistrictMap_66.html</loc>
+    <loc>/root/MapGeo66.html</loc>
+  </url>
+  <url>
+    <loc>/root/SubdistrictMap_62.html</loc>
+  </url>
+  <url>
+    <loc>/root/SubdistrictMap_63.html</loc>
+  </url>
+  <url>
+    <loc>/root/SubdistrictMap_64.html</loc>
+  </url>
+  <url>
+    <loc>/root/SubdistrictMap_65.html</loc>
+  </url>
+  <url>
+    <loc>/root/SubdistrictMap_66.html</loc>
+  </url>
+  <url>
+    <loc>/root/test.html</loc>
   </url>
 </urlset>

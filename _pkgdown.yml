@@ -5,17 +5,27 @@ navbar:
   structure:
     left:
     - intro
-    - reference
     - articles
+    - reference
     - tutorials
     - news
     right: github
   components:
-    reference:
-      text: Reference
-      href: reference/index.html
+    intro:
+      text: Subdistrict_data
+      menu:
+      - text: Subdistrict_data_66
+        href: articles/Subdistrict_data_66.html
+      - text: Subdistrict_data_65
+        href: articles/Subdistrict_data_65.html
+      - text: Subdistrict_data_64
+        href: articles/Subdistrict_data_64.html
+      - text: Subdistrict_data_63
+        href: articles/Subdistrict_data_63.html
+      - text: Subdistrict_data_62
+        href: articles/Subdistrict_data_62.html
     articles:
-      text: Articles
+      text: Geological_data
       menu:
       - text: Geological_data_62
         href: articles/Geological_data_62.html
@@ -27,13 +37,6 @@ navbar:
         href: articles/Geological_data_65.html
       - text: Geological_data_66
         href: articles/Geological_data_66.html
-      - text: Subdistrict_data_62
-        href: articles/Subdistrict_data_62.html
-      - text: Subdistrict_data_63
-        href: articles/Subdistrict_data_63.html
-      - text: Subdistrict_data_64
-        href: articles/Subdistrict_data_64.html
-      - text: Subdistrict_data_65
-        href: articles/Subdistrict_data_65.html
-      - text: Subdistrict_data_66
-        href: articles/Subdistrict_data_66.html
+    reference:
+      text: Reference
+      href: reference/index.html
