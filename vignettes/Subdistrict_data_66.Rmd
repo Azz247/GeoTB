@@ -31,7 +31,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://azz247.github.io/Geo_TB/map66.html">
+<iframe src="https://azz247.github.io/GeoTB/root/SubdistrictMap_66.html">
 </iframe>
 </div>')
 ```
