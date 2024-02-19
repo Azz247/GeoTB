@@ -1,4 +1,39 @@
-url: ~
-template:
-  bootstrap: 5
-
+pandoc: 3.1.1
+pkgdown: 2.0.7
+pkgdown_sha: ~
+navbar:
+  structure:
+    left:
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right: github
+  components:
+    reference:
+      text: Reference
+      href: reference/index.html
+    articles:
+      text: Articles
+      menu:
+      - text: Geological_data_62
+        href: articles/Geological_data_62.html
+      - text: Geological_data_63
+        href: articles/Geological_data_63.html
+      - text: Geological_data_64
+        href: articles/Geological_data_64.html
+      - text: Geological_data_65
+        href: articles/Geological_data_65.html
+      - text: Geological_data_66
+        href: articles/Geological_data_66.html
+      - text: Subdistrict_data_62
+        href: articles/Subdistrict_data_62.html
+      - text: Subdistrict_data_63
+        href: articles/Subdistrict_data_63.html
+      - text: Subdistrict_data_64
+        href: articles/Subdistrict_data_64.html
+      - text: Subdistrict_data_65
+        href: articles/Subdistrict_data_65.html
+      - text: Subdistrict_data_66
+        href: articles/Subdistrict_data_66.html
