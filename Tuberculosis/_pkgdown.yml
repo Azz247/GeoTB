@@ -1,0 +1,42 @@
+pandoc: 3.1.1
+pkgdown: 2.0.7
+pkgdown_sha: ~
+navbar:
+  structure:
+    left:
+    - intro
+    - articles
+    - reference
+    right: github
+  components:
+    intro:
+      text: Subdistrict_data
+      menu:
+      - text: Subdistrict_data_2566
+        href: articles/Subdistrict_data_2566.html
+      - text: Subdistrict_data_2565
+        href: articles/Subdistrict_data_2565.html
+      - text: Subdistrict_data_2564
+        href: articles/Subdistrict_data_2564.html
+      - text: Subdistrict_data_2563
+        href: articles/Subdistrict_data_2563.html
+      - text: Subdistrict_data_2562
+        href: articles/Subdistrict_data_2562.html
+    articles:
+      text: Geologic_data
+      menu:
+      - text: Geological_data_2566
+        href: articles/Geological_data_2566.html
+      - text: Geological_data_2565
+        href: articles/Geological_data_2565.html
+      - text: Geological_data_2564
+        href: articles/Geological_data_2564.html
+      - text: Geological_data_2563
+        href: articles/Geological_data_2563.html
+      - text: Geological_data_2562
+        href: articles/Geological_data_2562.html
+    reference:
+      text: Reference
+      href: reference/index.html
+
+
