@@ -27,16 +27,16 @@ navbar:
     articles:
       text: Geological_data
       menu:
-      - text: Geological_data_62
-        href: articles/Geological_data_62.html
-      - text: Geological_data_63
-        href: articles/Geological_data_63.html
-      - text: Geological_data_64
-        href: articles/Geological_data_64.html
-      - text: Geological_data_65
-        href: articles/Geological_data_65.html
       - text: Geological_data_66
         href: articles/Geological_data_66.html
+      - text: Geological_data_65
+        href: articles/Geological_data_65.html
+      - text: Geological_data_64
+        href: articles/Geological_data_64.html
+      - text: Geological_data_63
+        href: articles/Geological_data_63.html
+      - text: Geological_data_62
+        href: articles/Geological_data_62.html
     reference:
       text: Reference
       href: reference/index.html
