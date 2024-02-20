@@ -1,5 +1,5 @@
 Package: GeoTB
-Title: What the Package Does (One Line, Title Case)
+Title: Distribution of tuberculosis in Khonkean hospital
 Version: 0.0.0.9000
 Authors@R: 
     person("Narongsak", "Ngamchaiyaphum", , "Narongsak158@gmail.com", role = c("aut", "cre"),
