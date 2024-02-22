@@ -1,6 +1,6 @@
 Package: GeoTB
 Title: Distribution of tuberculosis in Khonkean hospital
-Version: 0.0.0.9000
+Version: 0.0.0.9
 Authors@R: 
     person("Narongsak", "Ngamchaiyaphum", , "Narongsak158@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))

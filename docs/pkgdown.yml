@@ -2,6 +2,7 @@ pandoc: 3.1.1
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
+  Dashboard: Dashboard.html
   Geological_data_62: Geological_data_62.html
   Geological_data_63: Geological_data_63.html
   Geological_data_64: Geological_data_64.html
@@ -12,5 +13,5 @@ articles:
   Subdistrict_data_64: Subdistrict_data_64.html
   Subdistrict_data_65: Subdistrict_data_65.html
   Subdistrict_data_66: Subdistrict_data_66.html
-last_built: 2024-02-20T12:57Z
+last_built: 2024-02-22T16:30Z
 

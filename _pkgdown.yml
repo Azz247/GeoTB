@@ -4,13 +4,16 @@ pkgdown_sha: ~
 navbar:
   structure:
     left:
+    - tutorials
     - intro
     - articles
     - reference
-    - tutorials
     - news
     right: github
   components:
+    tutorials:
+      text: Dashboard
+      href: articles/Dashboard.html
     intro:
       text: Subdistrict_data
       menu:
