@@ -4,7 +4,7 @@ Version: 0.0.0.9
 Authors@R: 
     person("Narongsak", "Ngamchaiyaphum", , "Narongsak158@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Distribution of tuberculosis in Khonkean hospital, Crossectional Data 5 years(2562-2566)
+Description: Distribution of tuberculosis in Khonkean hospital, Crossectional Data 10 years(2557-2566)
 License: by_R_Studio_on_Github
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
