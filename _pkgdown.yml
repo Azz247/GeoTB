@@ -19,30 +19,30 @@ navbar:
       - text: IPD data
         href: articles/DashboardIPD.html
     intro:
-      text: Sub-district map data
+      text: Sub-district Map
       menu:
-      - text: Sub-district map 2566
+      - text: Sub-district Map 2566
         href: articles/Subdistrict_data_66.html
-      - text: Sub-district map 2565
+      - text: Sub-district Map 2565
         href: articles/Subdistrict_data_65.html
-      - text: Sub-district map 2564
+      - text: Sub-district Map 2564
         href: articles/Subdistrict_data_64.html
-      - text: Sub-district map 2563
+      - text: Sub-district Map 2563
         href: articles/Subdistrict_data_63.html
-      - text: Sub-district map 2562
+      - text: Sub-district Map 2562
         href: articles/Subdistrict_data_62.html
     articles:
-      text: Geo_map
+      text: Geo-Map
       menu:
-      - text: Geo_map 2566
+      - text: Geo-Map 2566
         href: articles/Geological_data_66.html
-      - text: Geo_map 2565
+      - text: Geo-Map 2565
         href: articles/Geological_data_65.html
-      - text: Geo_map 2564
+      - text: Geo-Map 2564
         href: articles/Geological_data_64.html
-      - text: Geo_map 2563
+      - text: Geo-Map 2563
         href: articles/Geological_data_63.html
-      - text: Geo_map 2562
+      - text: Geo-Map 2562
         href: articles/Geological_data_62.html
     reference:
       text: Reference
