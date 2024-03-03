@@ -7,8 +7,9 @@ navbar:
     - tutorials
     - intro
     - articles
-    - reference
     - news
+    - reference
+
     right: github
   components:
     tutorials:
@@ -44,6 +45,9 @@ navbar:
         href: articles/Geological_data_63.html
       - text: Geo-Map 2562
         href: articles/Geological_data_62.html
+    news:
+      text: Time-series Map
+      href: articles/Time-series_Map.html
     reference:
       text: Reference
       href: reference/index.html
