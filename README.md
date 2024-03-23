@@ -27,7 +27,7 @@ the second-highest TB burden in the country, after Bangkok.
 🔽 This figure shows the change in the number of tuberculosis patients
 in Khon Kaen over 10 years.
 
-<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/TrendNumberOfpatient.png?raw=true" width="90%" />
+<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/TrendNumberOfpatient.png?raw=true" width="98%" />
 
 ## Research questions
 
