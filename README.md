@@ -31,10 +31,10 @@ in Khon Kaen over 10 years.
 
 ## Research questions
 
-How is tuberculosis distributed among the districts and subdistricts of
+How is tuberculosis distributed among the districts and sub-districts of
 Khon Kaen province, and what are the associated risk factors
 contributing to its incidence?
 
 ## Study design
 
-Ecological study
+Ecological study.
