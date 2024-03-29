@@ -44,11 +44,24 @@ htmltools::HTML('<style>
   border: none;
 }
 </style>
-
 <div class="dashboard"> 
-<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/fada284cca083984e8d598a722597b69e4d35f2f/Combine_sub_district.html">
+<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/7c08af1509fc26e5c3d3c426680d2c984029283f/SubdistrictCombine.html">
 </iframe>
 </div>')
+```
+```{r,echo=FALSE}
+htmltools::HTML('<div style="text-align: center;">
+    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
+        <p><strong>Number of patients</strong>
+            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
+            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
+            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
+            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
+            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> >200
+        </p>
+    </div>
+</div>
+')
 ```
 
 ## Styles
