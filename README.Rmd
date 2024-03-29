@@ -29,7 +29,7 @@ Thailand is among the 30 countries with the highest burden of TB, according to t
 
 🔽 This figure shows the change in the number of tuberculosis patients in Khon Kaen over 10 years.
 
-<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/Rplot01.png?raw=true" width="98%" />
+<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/Rplot01.png?raw=true" width="90%" />
 
 ## Research questions
 How is tuberculosis distributed among the districts and sub-districts of Khon Kaen province, and what are the associated risk factors contributing to its incidence?

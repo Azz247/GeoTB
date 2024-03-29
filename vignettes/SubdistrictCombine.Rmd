@@ -8,10 +8,6 @@ output:
       collapse: no
       smooth_scroll: yes
     theme: default
-vignette: >
-  %\VignetteIndexEntry{SubdistrictCombine}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include = FALSE}
