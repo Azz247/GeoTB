@@ -46,7 +46,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://azz247.github.io/GeoTB/root/Time-seriesMap.html">
+<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/fada284cca083984e8d598a722597b69e4d35f2f/Combine_sub_district.html">
 </iframe>
 </div>')
 ```
