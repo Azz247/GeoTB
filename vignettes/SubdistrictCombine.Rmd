@@ -73,8 +73,37 @@ The `html_vignette` template includes a basic CSS theme. To override this theme 
 The figure sizes have been customised so that you can easily put two images side-by-side. 
 
 ```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+htmltools::HTML('<style>
+.dashboard {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.dashboard iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+</style>
+<div class="dashboard"> 
+<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/2351e79aa7506c713a70f93696c187df3d572cc2/SubdistrictCombine.html">
+</iframe>
+</div>')
+```
+```{r,echo=FALSE}
+htmltools::HTML('<div style="text-align: center;">
+    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
+        <p><strong>Number of patients</strong>
+            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
+            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
+            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
+            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
+            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> >200
+        </p>
+    </div>
+</div>
+')
 ```
 
 You can enable figure captions by `fig_caption: yes` in YAML:
