@@ -198,9 +198,52 @@ metadata as follows:</p>
 <p>The figure sizes have been customised so that you can easily put two
 images side-by-side.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fl">10</span><span class="op">:</span><span class="fl">1</span><span class="op">)</span></span></code></pre></div>
-<p><img src="SubdistrictCombine_files/figure-html/unnamed-chunk-3-1.png" width="700"><img src="SubdistrictCombine_files/figure-html/unnamed-chunk-3-2.png" width="700"></p>
+<code class="sourceCode R"><span><span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/HTML.html" class="external-link">HTML</a></span><span class="op">(</span><span class="st">'&lt;style&gt;</span></span>
+<span><span class="st">.dashboard {</span></span>
+<span><span class="st">  left: 0;</span></span>
+<span><span class="st">  top: 0;</span></span>
+<span><span class="st">  bottom: 0;</span></span>
+<span><span class="st">  right: 0;</span></span>
+<span><span class="st">}</span></span>
+<span><span class="st">.dashboard iframe {</span></span>
+<span><span class="st">  width: 100%;</span></span>
+<span><span class="st">  height: 500px;</span></span>
+<span><span class="st">  border: none;</span></span>
+<span><span class="st">}</span></span>
+<span><span class="st">&lt;/style&gt;</span></span>
+<span><span class="st">&lt;div class="dashboard"&gt; </span></span>
+<span><span class="st">&lt;iframe src="https://rawcdn.githack.com/Azz247/GeoTB/2351e79aa7506c713a70f93696c187df3d572cc2/SubdistrictCombine.html"&gt;</span></span>
+<span><span class="st">&lt;/iframe&gt;</span></span>
+<span><span class="st">&lt;/div&gt;'</span><span class="op">)</span></span></code></pre></div>
+<style>
+.dashboard {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.dashboard iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+</style>
+<div class="dashboard"> 
+<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/2351e79aa7506c713a70f93696c187df3d572cc2/SubdistrictCombine.html">
+</iframe>
+</div>
+<div style="text-align: center;">
+    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
+        <p><strong>Number of patients</strong>
+            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
+            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
+            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
+            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
+            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> &gt;200
+        </p>
+    </div>
+</div>
+
 <p>You can enable figure captions by <code>fig_caption: yes</code> in
 YAML:</p>
 <pre><code><span><span class="va">output</span><span class="op">:</span></span>
