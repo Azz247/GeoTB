@@ -2,39 +2,29 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 <!-- badges: end -->
+## Description 
+　Tuberculosis (TB) is one of the most infectious diseases and a leading cause of death from a single infectious agent. It continues to be a significant problem for global public health. A 2023 WHO report reveals that over 10 million people are infected with TB globally each year. In response the World Health Organization (WHO) has set a goal to significantly reduce the global TB incidence rate by 2030.
+	
+　Thailand is among the 30 countries with the highest burden of TB. The National Tuberculosis Report in Thailand 2021 indicates that Khon Kaen province has the second-highest estimated TB burden after Bangkok. In 2022, the estimated TB incidence rate in Thailand was 155 persons per 100,000 population, exceeding the global estimated rate of 133 persons per 100,000 population.
+ 	
+　Tuberculosis is an airborne disease that spreads when an infected person expels the bacteria into the air. This puts people nearby at increased risk of TB infection. Therefore, predicting risk areas has the potential to improve prevention and disease control plans, especially when resources and budget allocation are limited. A 2022 ecological study on tuberculosis in Thailand found that risk factors influencing the incidence rate of tuberculosis vary across provinces. According to a review of the literature, there are no existing ecological studies on tuberculosis at the district and sub-district levels in Thailand. This study aims to predict risk areas at the sub-district level in Khon Kaen and identify risk factors influencing the incidence rate of tuberculosis.
 
-## Description
+🔽 This figure shows the change in the number of tuberculosis patients in Khon Kaen over 10 years.
 
-This website is built to present the distribution of tuberculosis in
-Khon Kaen, using 10 years (2014-2023) of cross-sectional data from Khon
-Kaen Hospital.
+<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/Rplot01.png?raw=true" width="80%" />
 
-## Introduction
-
-Tuberculosis (TB) is one of the most infectious diseases, posing a
-significant threat to public health. It is also a leading cause of death
-from a single infectious agent.
-
-According to a 2023 WHO report, over 10 million people are infected with
-TB globally each year, The World Health Organization (WHO) has set a
-goal to end the global TB epidemic by 2030.
-
-Thailand is among the 30 countries with the highest burden of TB,
-according to the World Health Organization. The latest National
-Tuberculosis Report in Thailand indicates that Khon Kaen province has
-the second-highest TB burden in the country, after Bangkok.
-
-🔽 This figure shows the change in the number of tuberculosis patients
-in Khon Kaen over 10 years.
-
-<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/Rplot01.png?raw=true" width="90%" />
+## Justification
+　Limited spatiotemporal data exists concerning tuberculosis in Thailand, and studies examining the disease at the sub-district level are lacking. This study aims to describe the demographic attributes of people with tuberculosis, identify spatial clusters at the sub-district level in Khon Kaen, and identify risk factors influencing the incidence rate of tuberculosis within these areas. 
 
 ## Research questions
+　How is tuberculosis distributed at the sub-district level in Khon Kaen, and what are the associated risk factors contributing to its incidence?
 
-How is tuberculosis distributed among the districts and sub-districts of
-Khon Kaen province, and what are the associated risk factors
-contributing to its incidence?
+## Study design 
+　Ecological study.
+  
+## Objectives of the study
+　Primary objective: To describe the demographic attributes of people with tuberculosis at the sub-district level in Khon Kaen. and Secondary objective: To identify risk factors influencing the incidence rate of tuberculosis at the sub-district level in Khon Kaen.
+	
+## Expected benefits and application
+　The findings of this research could inform targeted public health interventions, leading to more effective prevention and disease control strategies.
 
-## Study design
-
-Ecological study.
