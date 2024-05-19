@@ -47,7 +47,7 @@ navbar:
         href: articles/Geological_data_62.html
     news:
       text: Time-series Map
-      href: articles/Time-series_Map.html
+      href: root/Time-seriesMap_OPD_KK.html
     reference:
       text: Reference
       href: reference/index.html
