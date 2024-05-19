@@ -31,7 +31,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://azz247.github.io/GeoTB/root/Time-seriesMap.html">
+<iframe src="https://azz247.github.io/GeoTB/root/Time-seriesMap_OPD_KK.html">
 </iframe>
 </div>')
 ```
