@@ -1,8 +1,8 @@
 ---
-title: "Subdistrict_data_62"
+title: "Choropleth map of Mueang Khon Kaen District"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Subdistrict_data_62}
+  %\VignetteIndexEntry{Choropleth map of Mueang Khon Kaen District}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -31,7 +31,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://azz247.github.io/GeoTB/root/SubdistrictMap_62.html">
+<iframe src="https://azz247.github.io/GeoTB/root/Combine_subdistrict_MueangKK.html">
 </iframe>
 </div>')
 ```

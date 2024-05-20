@@ -21,17 +21,7 @@ navbar:
         href: articles/DashboardIPD.html
     intro:
       text: Sub-district Map
-      menu:
-      - text: Sub-district Map 2566
-        href: articles/Subdistrict_data_66.html
-      - text: Sub-district Map 2565
-        href: articles/Subdistrict_data_65.html
-      - text: Sub-district Map 2564
-        href: articles/Subdistrict_data_64.html
-      - text: Sub-district Map 2563
-        href: articles/Subdistrict_data_63.html
-      - text: Sub-district Map 2562
-        href: articles/Subdistrict_data_62.html
+      href: articles/Subdistrict_2016-2023.html
     articles:
       text: Geo-Map
       menu:
