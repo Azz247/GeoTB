@@ -22,5 +22,5 @@ This website was built to present the results of an ecological study on tubercul
 
 🔽 This figure shows the change in the number of tuberculosis patients in Khon Kaen over 10 years.
 
-<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/Rplot01.png?raw=true" width="85%" />
+<img src="https://github.com/Azz247/GeoTB/blob/main/man/figures/Rplot01.png?raw=true" width="86%" />
 

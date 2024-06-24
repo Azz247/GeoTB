@@ -6,7 +6,7 @@
 ## Description
 
 This website was built to present the results of an ecological study on
-tuberculosis at the sub-district level of Khon Kaen.
+tuberculosis at the sub-district level of Mueang Khon Kaen.
 
 🔽 This figure shows the change in the number of tuberculosis patients
 in Khon Kaen over 10 years.
