@@ -21,20 +21,20 @@ navbar:
         href: articles/DashboardIPD.html
     intro:
       text: Sub-district Map
-      href: articles/Subdistrict_2016-2023.html
-    articles:
-      text: Geo-Map
       menu:
-      - text: Geo-Map 2566
-        href: articles/Geological_data_66.html
-      - text: Geo-Map 2565
+      - text: Map of tuberculosis patient numbers
+        href: articles/Subdistrict_2016-2023.html
+      - text: Map of Crude Incidence Rate
+        href: articles/MapOfCIR.html
+    articles:
+      text: Spatial Autocorrelation
+      menu:
+      - text: Overview
+        href: articles/SubdistrictCombine.html
+      - text: Global Autocorrelation
         href: articles/Geological_data_65.html
-      - text: Geo-Map 2564
+      - text: Local Autocorrelation
         href: articles/Geological_data_64.html
-      - text: Geo-Map 2563
-        href: articles/Geological_data_63.html
-      - text: Geo-Map 2562
-        href: articles/Geological_data_62.html
     news:
       text: Time-series Map
       href: articles/Time-series_Map.html

@@ -28,6 +28,9 @@
     <loc>/articles/index.html</loc>
   </url>
   <url>
+    <loc>/articles/MapOfCIR.html</loc>
+  </url>
+  <url>
     <loc>/articles/SubdistrictCombine.html</loc>
   </url>
   <url>
@@ -77,6 +80,9 @@
   </url>
   <url>
     <loc>/root/MapGeo66.html</loc>
+  </url>
+  <url>
+    <loc>/root/MapOfCrudeIncidence.html</loc>
   </url>
   <url>
     <loc>/root/SubdistrictMap_62.html</loc>
