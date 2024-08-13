@@ -13,6 +13,10 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+## Contents
+- [Spatial weight](#spatial-weight)
+- [Global Spatial Autocorrelation](#global-spatial-autocorrelation)
+- [Local Spatial Autocorrelation](#local-spatial-autocorrelation)
 
 Spatial autocorrelation refers to a clustering pattern in the spatial distribution of a variable, indicating the extent to which a variable is spatially correlated with itself. Positive autocorrelation (or clustering) occurs when neighboring observations are more similar to each other, while negative autocorrelation (or dispersion) occurs when neighboring observations tend to differ. This technique can be divided into two main methods
 - Global spatial autocorrelation
