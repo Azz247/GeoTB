@@ -3,7 +3,7 @@ title: "Spatial autocorrelation"
 output: 
   html_document:
     code_folding: hide
-    toc: true
+    toc: false
     theme: default
 ---
 
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-## Contents
+
 - [Spatial weight](#spatial-weight)
 - [Global Spatial Autocorrelation](#global-spatial-autocorrelation)
 - [Local Spatial Autocorrelation](#local-spatial-autocorrelation)
