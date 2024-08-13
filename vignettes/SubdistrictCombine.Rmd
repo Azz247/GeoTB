@@ -3,10 +3,7 @@ title: "Subdistrict Map"
 output: 
   html_document:
     code_folding: hide
-    toc: true
-    toc_float: 
-      collapse: no
-      smooth_scroll: yes
+    toc: false
     theme: default
 ---
 
@@ -17,112 +14,37 @@ knitr::opts_chunk$set(
 )
 ```
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+Spatial autocorrelation refers to a clustering pattern in the spatial distribution of a variable, indicating the extent to which a variable is spatially correlated with itself. Positive autocorrelation (or clustering) occurs when neighboring observations are more similar to each other, while negative autocorrelation (or dispersion) occurs when neighboring observations tend to differ. This technique can be divided into two main methods
+- Global spatial autocorrelation
+- Local spatial autocorrelation
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+## Spatial weight
+In the first step, we identify the spatial weight matrix (W) as a square binary matrix based on queen contiguity. The concept of queen contiguity considers adjacent neighbors that mutually share borders and edges. In this square binary matrix, if units i and j share a border, the matrix weight (wij) is set to 1; if they do not share a border, (wij) is set to 0. The diagonal elements of the weight matrix (wii) are also set to 0. In this study, Spatial weight of 18 locations(sub-district) was evaluated and calculated queen contiguity by using `GeoDa (version 1.22)` as represented
 
-## Vignette Info
-
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
 ```{r,echo=FALSE}
-htmltools::HTML('<style>
-.dashboard {
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-.dashboard iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-</style>
-<div class="dashboard"> 
-<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/94dd2de85205b5233692a1d75bf0a082c4d0ef00/Subdistrict2020_2023.html">
-</iframe>
-</div>')
+htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" width="80%" />')
 ```
+
+## Global Spatial Autocorrelation
+A global detection technique was used to assess spatial autocorrelation across the entire study area, providing a single summary measure that describes the overall degree of spatial association in the dataset. The Global Moran’s I statistic (Moran, 1950) was used to calculate the global autocorrelation coefficient.15. It yields a score ranging between -1 and 1: a positive score indicates clustering of similar values, a negative score indicates dispersion of similar values, and a score close to zero suggests a random spatial distribution
+
 ```{r,echo=FALSE}
-htmltools::HTML('<div style="text-align: center;">
-    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
-        <p><strong>Number of patients</strong>
-            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
-            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
-            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
-            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
-            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> >200
-        </p>
-    </div>
-</div>
-')
+htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/GlobalMoran.png" width="65%" />')
 ```
 
-## Styles
+Inference for Global Moran’s I was based on the null hypothesis of spatial randomness. The significance of the Global Moran’s I statistic was evaluated using a permutation test distribution20, with 99,999 random permutations computed using `GeoDa (version 1.22)`. 	
 
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+## Local Spatial Autocorrelation
+Local detection focuses on spatial autocorrelation at specific locations within the study area. The Local Moran’s I statistic was used to calculate local autocorrelation. A positive Local Moran’s I indicates a cluster of similar values, while a negative Local Moran’s I indicates clustering of dissimilar values. If the Local Moran’s I is close to zero, it suggests that there is no significant spatial clustering at that location.
 
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
-
-## Figures
-
-The figure sizes have been customised so that you can easily put two images side-by-side. 
-
-```{r, fig.show='hold'}
-htmltools::HTML('<style>
-.dashboard {
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-.dashboard iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-</style>
-<div class="dashboard"> 
-<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/2351e79aa7506c713a70f93696c187df3d572cc2/SubdistrictCombine.html">
-</iframe>
-</div>')
-```
 ```{r,echo=FALSE}
-htmltools::HTML('<div style="text-align: center;">
-    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
-        <p><strong>Number of patients</strong>
-            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
-            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
-            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
-            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
-            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> >200
-        </p>
-    </div>
-</div>
-')
+htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/LocalMoran.png" width="65%" />')
 ```
 
-You can enable figure captions by `fig_caption: yes` in YAML:
+The significance of the Local Moran’s I statistic for each spatial unit was evaluated using a permutation test distribution, with 99,999 random permutations computed using GeoDa (version 1.22). This high number of permutations increases the precision of the significance tests, ensuring more reliable identification of significant spatial clusters. Results are considered significant when the p-value is less than 0.05.
 
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
+Local Indicators of Spatial Association (LISA) statistical measures are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation indicates the extent of significant spatial clustering of similar values around that location. In this study, LISA was used to analyze local spatial autocorrelation, resulting in four distinct categories:
+- High-High cluster
+- High-Low outlier
+- Low-Low cluster
+- Low-High outlier

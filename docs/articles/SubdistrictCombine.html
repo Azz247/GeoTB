@@ -117,316 +117,69 @@
 
     
     
-<p>Vignettes are long form documentation commonly included in packages.
-Because they are part of the distribution of the package, they need to
-be as compact as possible. The <code>html_vignette</code> output type
-provides a custom style sheet (and tweaks some options) to ensure that
-the resulting html is as small as possible. The
-<code>html_vignette</code> format:</p>
-<ul>
-<li>Never uses retina figures</li>
-<li>Has a smaller default figure size</li>
-<li>Uses a custom CSS stylesheet instead of the default Twitter
-Bootstrap style</li>
-</ul>
+<p>Spatial autocorrelation refers to a clustering pattern in the spatial
+distribution of a variable, indicating the extent to which a variable is
+spatially correlated with itself. Positive autocorrelation (or
+clustering) occurs when neighboring observations are more similar to
+each other, while negative autocorrelation (or dispersion) occurs when
+neighboring observations tend to differ. This technique can be divided
+into two main methods - Global spatial autocorrelation - Local spatial
+autocorrelation</p>
 <div class="section level2">
-<h2 id="vignette-info">Vignette Info<a class="anchor" aria-label="anchor" href="#vignette-info"></a>
+<h2 id="spatial-weight">Spatial weight<a class="anchor" aria-label="anchor" href="#spatial-weight"></a>
 </h2>
-<p>Note the various macros within the <code>vignette</code> section of
-the metadata block above. These are required in order to instruct R how
-to build the vignette. Note that you should change the
-<code>title</code> field and the <code>\VignetteIndexEntry</code> to
-match the title of your vignette.</p>
-<style>
-.dashboard {
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-.dashboard iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-</style>
-<div class="dashboard"> 
-<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/94dd2de85205b5233692a1d75bf0a082c4d0ef00/Subdistrict2020_2023.html">
-</iframe>
-</div>
-<div style="text-align: center;">
-    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
-        <p><strong>Number of patients</strong>
-            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
-            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
-            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
-            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
-            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> &gt;200
-        </p>
-    </div>
-</div>
-
+<p>In the first step, we identify the spatial weight matrix (W) as a
+square binary matrix based on queen contiguity. The concept of queen
+contiguity considers adjacent neighbors that mutually share borders and
+edges. In this square binary matrix, if units i and j share a border,
+the matrix weight (wij) is set to 1; if they do not share a border,
+(wij) is set to 0. The diagonal elements of the weight matrix (wii) are
+also set to 0. In this study, Spatial weight of 18
+locations(sub-district) was evaluated and calculated queen contiguity by
+using <code>GeoDa (version 1.22)</code> as represented</p>
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" width="80%">
 </div>
 <div class="section level2">
-<h2 id="styles">Styles<a class="anchor" aria-label="anchor" href="#styles"></a>
+<h2 id="global-spatial-autocorrelation">Global Spatial Autocorrelation<a class="anchor" aria-label="anchor" href="#global-spatial-autocorrelation"></a>
 </h2>
-<p>The <code>html_vignette</code> template includes a basic CSS theme.
-To override this theme you can specify your own CSS in the document
-metadata as follows:</p>
-<pre><code><span><span class="va">output</span><span class="op">:</span> </span>
-<span>  <span class="fu">rmarkdown</span><span class="fu">::</span><span class="va"><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_vignette.html" class="external-link">html_vignette</a></span><span class="op">:</span></span>
-<span>    <span class="va">css</span><span class="op">:</span> <span class="va">mystyles.css</span></span></code></pre>
+<p>A global detection technique was used to assess spatial
+autocorrelation across the entire study area, providing a single summary
+measure that describes the overall degree of spatial association in the
+dataset. The Global Moran’s I statistic (Moran, 1950) was used to
+calculate the global autocorrelation coefficient.15. It yields a score
+ranging between -1 and 1: a positive score indicates clustering of
+similar values, a negative score indicates dispersion of similar values,
+and a score close to zero suggests a random spatial distribution</p>
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/GlobalMoran.png" width="65%"><p>Inference for Global Moran’s I was based on the null hypothesis of
+spatial randomness. The significance of the Global Moran’s I statistic
+was evaluated using a permutation test distribution20, with 99,999
+random permutations computed using
+<code>GeoDa (version 1.22)</code>.</p>
 </div>
 <div class="section level2">
-<h2 id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+<h2 id="local-spatial-autocorrelation">Local Spatial Autocorrelation<a class="anchor" aria-label="anchor" href="#local-spatial-autocorrelation"></a>
 </h2>
-<p>The figure sizes have been customised so that you can easily put two
-images side-by-side.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/HTML.html" class="external-link">HTML</a></span><span class="op">(</span><span class="st">'&lt;style&gt;</span></span>
-<span><span class="st">.dashboard {</span></span>
-<span><span class="st">  left: 0;</span></span>
-<span><span class="st">  top: 0;</span></span>
-<span><span class="st">  bottom: 0;</span></span>
-<span><span class="st">  right: 0;</span></span>
-<span><span class="st">}</span></span>
-<span><span class="st">.dashboard iframe {</span></span>
-<span><span class="st">  width: 100%;</span></span>
-<span><span class="st">  height: 500px;</span></span>
-<span><span class="st">  border: none;</span></span>
-<span><span class="st">}</span></span>
-<span><span class="st">&lt;/style&gt;</span></span>
-<span><span class="st">&lt;div class="dashboard"&gt; </span></span>
-<span><span class="st">&lt;iframe src="https://rawcdn.githack.com/Azz247/GeoTB/2351e79aa7506c713a70f93696c187df3d572cc2/SubdistrictCombine.html"&gt;</span></span>
-<span><span class="st">&lt;/iframe&gt;</span></span>
-<span><span class="st">&lt;/div&gt;'</span><span class="op">)</span></span></code></pre></div>
-<style>
-.dashboard {
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-.dashboard iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-</style>
-<div class="dashboard"> 
-<iframe src="https://rawcdn.githack.com/Azz247/GeoTB/2351e79aa7506c713a70f93696c187df3d572cc2/SubdistrictCombine.html">
-</iframe>
-</div>
-<div style="text-align: center;">
-    <div class="legend" style="font-family: Arial, sans-serif; font-size: 14px; display: inline-block; text-align: left;">
-        <p><strong>Number of patients</strong>
-            <span style="display:inline-block; width:20px; height:10px; background-color:#f5b3bb; margin-left: 10px;"></span> 1-5
-            <span style="display:inline-block; width:20px; height:10px; background-color:#ef8894; margin-left: 10px;"></span> 6-10
-            <span style="display:inline-block; width:20px; height:10px; background-color:#e85767; margin-left: 10px;"></span> 11-50
-            <span style="display:inline-block; width:20px; height:10px; background-color:#dc0018; margin-left: 10px;"></span> 51-200
-            <span style="display:inline-block; width:20px; height:10px; background-color:#a60013; margin-left: 10px;"></span> &gt;200
-        </p>
-    </div>
-</div>
-
-<p>You can enable figure captions by <code>fig_caption: yes</code> in
-YAML:</p>
-<pre><code><span><span class="va">output</span><span class="op">:</span></span>
-<span>  <span class="fu">rmarkdown</span><span class="fu">::</span><span class="va"><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_vignette.html" class="external-link">html_vignette</a></span><span class="op">:</span></span>
-<span>    <span class="va">fig_caption</span><span class="op">:</span> <span class="va">yes</span></span></code></pre>
-<p>Then you can use the chunk option
-<code>fig.cap = "Your figure caption."</code> in
-<strong>knitr</strong>.</p>
-</div>
-<div class="section level2">
-<h2 id="more-examples">More Examples<a class="anchor" aria-label="anchor" href="#more-examples"></a>
-</h2>
-<p>You can write math expressions, e.g. <span class="math inline">\(Y =
-X\beta + \epsilon\)</span>, footnotes<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, and tables, e.g. using
-<code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">knitr::kable()</a></code>.</p>
-<table style="width:100%;" class="table">
-<colgroup>
-<col width="25%">
-<col width="7%">
-<col width="5%">
-<col width="8%">
-<col width="5%">
-<col width="7%">
-<col width="8%">
-<col width="8%">
-<col width="4%">
-<col width="4%">
-<col width="7%">
-<col width="7%">
-</colgroup>
-<thead><tr class="header">
-<th align="left"></th>
-<th align="right">mpg</th>
-<th align="right">cyl</th>
-<th align="right">disp</th>
-<th align="right">hp</th>
-<th align="right">drat</th>
-<th align="right">wt</th>
-<th align="right">qsec</th>
-<th align="right">vs</th>
-<th align="right">am</th>
-<th align="right">gear</th>
-<th align="right">carb</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">Mazda RX4</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160.0</td>
-<td align="right">110</td>
-<td align="right">3.90</td>
-<td align="right">2.620</td>
-<td align="right">16.46</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="left">Mazda RX4 Wag</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160.0</td>
-<td align="right">110</td>
-<td align="right">3.90</td>
-<td align="right">2.875</td>
-<td align="right">17.02</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td align="left">Datsun 710</td>
-<td align="right">22.8</td>
-<td align="right">4</td>
-<td align="right">108.0</td>
-<td align="right">93</td>
-<td align="right">3.85</td>
-<td align="right">2.320</td>
-<td align="right">18.61</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="left">Hornet 4 Drive</td>
-<td align="right">21.4</td>
-<td align="right">6</td>
-<td align="right">258.0</td>
-<td align="right">110</td>
-<td align="right">3.08</td>
-<td align="right">3.215</td>
-<td align="right">19.44</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">Hornet Sportabout</td>
-<td align="right">18.7</td>
-<td align="right">8</td>
-<td align="right">360.0</td>
-<td align="right">175</td>
-<td align="right">3.15</td>
-<td align="right">3.440</td>
-<td align="right">17.02</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="left">Valiant</td>
-<td align="right">18.1</td>
-<td align="right">6</td>
-<td align="right">225.0</td>
-<td align="right">105</td>
-<td align="right">2.76</td>
-<td align="right">3.460</td>
-<td align="right">20.22</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td align="left">Duster 360</td>
-<td align="right">14.3</td>
-<td align="right">8</td>
-<td align="right">360.0</td>
-<td align="right">245</td>
-<td align="right">3.21</td>
-<td align="right">3.570</td>
-<td align="right">15.84</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="left">Merc 240D</td>
-<td align="right">24.4</td>
-<td align="right">4</td>
-<td align="right">146.7</td>
-<td align="right">62</td>
-<td align="right">3.69</td>
-<td align="right">3.190</td>
-<td align="right">20.00</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="left">Merc 230</td>
-<td align="right">22.8</td>
-<td align="right">4</td>
-<td align="right">140.8</td>
-<td align="right">95</td>
-<td align="right">3.92</td>
-<td align="right">3.150</td>
-<td align="right">22.90</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="left">Merc 280</td>
-<td align="right">19.2</td>
-<td align="right">6</td>
-<td align="right">167.6</td>
-<td align="right">123</td>
-<td align="right">3.92</td>
-<td align="right">3.440</td>
-<td align="right">18.30</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-</tbody>
-</table>
-<p>Also a quote using <code>&gt;</code>:</p>
-<blockquote>
-<p>“He who gives up [code] safety for [code] speed deserves neither.”
-(<a href="https://twitter.com/hadleywickham/status/504368538874703872" class="external-link">via</a>)</p>
-</blockquote>
-</div>
-<div class="footnotes footnotes-end-of-document">
-<hr>
-<ol>
-<li id="fn1"><p>A footnote here.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-</ol>
+<p>Local detection focuses on spatial autocorrelation at specific
+locations within the study area. The Local Moran’s I statistic was used
+to calculate local autocorrelation. A positive Local Moran’s I indicates
+a cluster of similar values, while a negative Local Moran’s I indicates
+clustering of dissimilar values. If the Local Moran’s I is close to
+zero, it suggests that there is no significant spatial clustering at
+that location.</p>
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/LocalMoran.png" width="65%"><p>The significance of the Local Moran’s I statistic for each spatial
+unit was evaluated using a permutation test distribution, with 99,999
+random permutations computed using GeoDa (version 1.22). This high
+number of permutations increases the precision of the significance
+tests, ensuring more reliable identification of significant spatial
+clusters. Results are considered significant when the p-value is less
+than 0.05.</p>
+<p>Local Indicators of Spatial Association (LISA) statistical measures
+are used to identify the magnitude of spatial clustering around specific
+geographical points or areal units. Each observation indicates the
+extent of significant spatial clustering of similar values around that
+location. In this study, LISA was used to analyze local spatial
+autocorrelation, resulting in four distinct categories: - High-High
+cluster - High-Low outlier - Low-Low cluster - Low-High outlier</p>
 </div>
   </div>
 
