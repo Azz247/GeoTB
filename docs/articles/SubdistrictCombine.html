@@ -117,21 +117,19 @@
 
     
     
-<ul>
-<li><a href="#spatial-weight">Spatial weight</a></li>
-<li><a href="#global-spatial-autocorrelation">Global Spatial
-Autocorrelation</a></li>
-<li><a href="#local-spatial-autocorrelation">Local Spatial
-Autocorrelation</a></li>
-</ul>
 <p>Spatial autocorrelation refers to a clustering pattern in the spatial
 distribution of a variable, indicating the extent to which a variable is
 spatially correlated with itself. Positive autocorrelation (or
 clustering) occurs when neighboring observations are more similar to
 each other, while negative autocorrelation (or dispersion) occurs when
 neighboring observations tend to differ. This technique can be divided
-into two main methods - Global spatial autocorrelation - Local spatial
-autocorrelation</p>
+into two main methods:</p>
+<ul>
+<li><a href="#global-spatial-autocorrelation">Global Spatial
+Autocorrelation</a></li>
+<li><a href="#local-spatial-autocorrelation">Local Spatial
+Autocorrelation</a></li>
+</ul>
 <div class="section level2">
 <h2 id="spatial-weight">Spatial weight<a class="anchor" aria-label="anchor" href="#spatial-weight"></a>
 </h2>
@@ -153,15 +151,14 @@ using <code>GeoDa (version 1.22)</code> as represented</p>
 autocorrelation across the entire study area, providing a single summary
 measure that describes the overall degree of spatial association in the
 dataset. The Global Moran’s I statistic (Moran, 1950) was used to
-calculate the global autocorrelation coefficient.15. It yields a score
+calculate the global autocorrelation coefficient. It yields a score
 ranging between -1 and 1: a positive score indicates clustering of
 similar values, a negative score indicates dispersion of similar values,
 and a score close to zero suggests a random spatial distribution</p>
 <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/GlobalMoran.png" width="65%"><p>Inference for Global Moran’s I was based on the null hypothesis of
 spatial randomness. The significance of the Global Moran’s I statistic
-was evaluated using a permutation test distribution20, with 99,999
-random permutations computed using
-<code>GeoDa (version 1.22)</code>.</p>
+was evaluated using a permutation test distribution, with 99,999 random
+permutations computed using <code>GeoDa (version 1.22)</code>.</p>
 </div>
 <div class="section level2">
 <h2 id="local-spatial-autocorrelation">Local Spatial Autocorrelation<a class="anchor" aria-label="anchor" href="#local-spatial-autocorrelation"></a>
@@ -173,7 +170,7 @@ a cluster of similar values, while a negative Local Moran’s I indicates
 clustering of dissimilar values. If the Local Moran’s I is close to
 zero, it suggests that there is no significant spatial clustering at
 that location.</p>
-<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/LocalMoran.png" width="65%"><p>The significance of the Local Moran’s I statistic for each spatial
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/LocalMoran.png" width="60%"><p>The significance of the Local Moran’s I statistic for each spatial
 unit was evaluated using a permutation test distribution, with 99,999
 random permutations computed using <code>GeoDa (version 1.22)</code>.
 This high number of permutations increases the precision of the
@@ -185,8 +182,13 @@ are used to identify the magnitude of spatial clustering around specific
 geographical points or areal units. Each observation indicates the
 extent of significant spatial clustering of similar values around that
 location. In this study, LISA was used to analyze local spatial
-autocorrelation, resulting in four distinct categories: - High-High
-cluster - High-Low outlier - Low-Low cluster - Low-High outlier</p>
+autocorrelation, resulting in four distinct categories:</p>
+<ul>
+<li>High-High cluster</li>
+<li>High-Low outlier</li>
+<li>Low-Low cluster</li>
+<li>Low-High outlier</li>
+</ul>
 </div>
   </div>
 
