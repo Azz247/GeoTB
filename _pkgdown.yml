@@ -32,9 +32,9 @@ navbar:
       - text: Overview
         href: articles/SubdistrictCombine.html
       - text: Global Autocorrelation
-        href: articles/Geological_data_65.html
+        href: articles/GlobalMoran.html
       - text: Local Autocorrelation
-        href: articles/Geological_data_64.html
+        href: articles/LocalMoran.html
     news:
       text: Time-series Map
       href: articles/Time-series_Map.html

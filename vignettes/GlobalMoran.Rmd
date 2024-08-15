@@ -1,8 +1,8 @@
 ---
-title: "Geological_data_63"
+title: "Global Moran's I"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Geological_data_63}
+  %\VignetteIndexEntry{Global Moran's I}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -32,7 +32,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://azz247.github.io/GeoTB/root/MapGeo63.html">
+<iframe src="https://azz247.github.io/GeoTB/root/GlobalMoranI.html">
 </iframe>
 </div>')
 ```

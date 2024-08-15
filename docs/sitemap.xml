@@ -25,7 +25,13 @@
     <loc>/articles/Geological_data_66.html</loc>
   </url>
   <url>
+    <loc>/articles/GlobalMoran.html</loc>
+  </url>
+  <url>
     <loc>/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>/articles/LocalMoran.html</loc>
   </url>
   <url>
     <loc>/articles/MapOfCIR.html</loc>
@@ -65,6 +71,12 @@
   </url>
   <url>
     <loc>/root/Combine_subdistrict_MueangKK.html</loc>
+  </url>
+  <url>
+    <loc>/root/GlobalMoranI.html</loc>
+  </url>
+  <url>
+    <loc>/root/LocalMoranI.html</loc>
   </url>
   <url>
     <loc>/root/MapGeo62.html</loc>
