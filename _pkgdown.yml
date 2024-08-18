@@ -19,6 +19,8 @@ navbar:
         href: articles/Dashboard.html
       - text: IPD data
         href: articles/DashboardIPD.html
+      - text: Summary
+        href: articles/Summary.html
     intro:
       text: Sub-district Map
       menu:
@@ -30,7 +32,7 @@ navbar:
       text: Spatial Autocorrelation
       menu:
       - text: Overview
-        href: articles/SubdistrictCombine.html
+        href: articles/Spatial autocorrelation.html
       - text: Global Autocorrelation
         href: articles/GlobalMoran.html
       - text: Local Autocorrelation
