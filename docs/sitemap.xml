@@ -10,15 +10,6 @@
     <loc>/articles/DashboardIPD.html</loc>
   </url>
   <url>
-    <loc>/articles/Geological_data_62.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Geological_data_63.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Geological_data_64.html</loc>
-  </url>
-  <url>
     <loc>/articles/Geological_data_65.html</loc>
   </url>
   <url>
@@ -40,13 +31,7 @@
     <loc>/articles/Spatial autocorrelation.html</loc>
   </url>
   <url>
-    <loc>/articles/SubdistrictCombine.html</loc>
-  </url>
-  <url>
     <loc>/articles/Subdistrict_2016-2023.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Subdistrict_data_63.html</loc>
   </url>
   <url>
     <loc>/articles/Subdistrict_data_64.html</loc>
@@ -61,9 +46,6 @@
     <loc>/articles/Summary.html</loc>
   </url>
   <url>
-    <loc>/articles/test.html</loc>
-  </url>
-  <url>
     <loc>/articles/Time-series_Map.html</loc>
   </url>
   <url>
@@ -74,53 +56,5 @@
   </url>
   <url>
     <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/root/Combine_subdistrict_MueangKK.html</loc>
-  </url>
-  <url>
-    <loc>/root/GlobalMoranI.html</loc>
-  </url>
-  <url>
-    <loc>/root/LocalMoranI.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo62.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo63.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo64.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo65.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo66.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapOfCrudeIncidence.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_62.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_63.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_64.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_65.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_66.html</loc>
-  </url>
-  <url>
-    <loc>/root/Time-seriesMap.html</loc>
-  </url>
-  <url>
-    <loc>/root/Time-seriesMap_OPD_KK.html</loc>
   </url>
 </urlset>

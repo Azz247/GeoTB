@@ -5,6 +5,8 @@ output:
     code_folding: hide
     md_extension: +gfm_auto_identifiers
     toc: True
+    toc_float:
+      collapse: False
     theme: default
 ---
 
