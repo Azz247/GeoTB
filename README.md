@@ -3,7 +3,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-## What is GeoTB ? <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/treasure-map.png" align="right" alt="" width="110" />
+## What is GeoTB ? <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/treasure-map.png" align="right" alt="" width="120" />
 
 GeoTB is a website created to showcase the results of an ecological
 study on the spatial patterns of tuberculosis (TB) at the sub-district
@@ -11,7 +11,7 @@ level in Mueang Khon Kaen District. The study aims to identify and
 visualize the geographic distribution of TB cases to better understand
 the disease’s impact in this area.
 
-## Why study in Mueang Khon Kaen district ?
+## 📌 Why study in Mueang Khon Kaen district ?
 
 Thailand is one of the 30 countries with the highest TB burden globally.
 Within Thailand, Khon Kaen Province ranks second for the highest
