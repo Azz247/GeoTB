@@ -64,4 +64,4 @@ IPD data show that the trend in the age of female patients is decreasing, from a
 htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/Death.png" width="80%" />')
 ```
 
-We have data on the number of all-cause deaths among tuberculosis patients in the hospital each year from IPD data. This shows that the number of deaths in the hospital was relatively stable from 2014 to 2020, but there is an increasing trend from 49 persons per year in 2020 to 95 persons per year in 2023.
+We have data on the number of all-cause deaths among tuberculosis patients in the hospital each year from IPD data. This shows that the number of deaths in the hospital was relatively stable from 2014 to 2020, but there is an increasing trend from 49 persons per year in 2020 to 95 persons per year in 2023. When divided by gender, we see an interesting trend where the increase in overall mortality from 2021 to 2023 is mainly driven by the male trend, while the female trend shows only a slight increase from 2020 to 2023.
