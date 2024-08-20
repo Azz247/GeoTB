@@ -47,6 +47,7 @@ htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/m
 
 The significance of the Local Moran’s I statistic for each spatial unit was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. This high number of permutations increases the precision of the significance tests, ensuring more reliable identification of significant spatial clusters. Results are considered significant when the p-value is less than 0.05.
 
+## Local Indicators of Spatial Association (LISA)
 Local Indicators of Spatial Association (LISA) statistical measures are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation indicates the extent of significant spatial clustering of similar values around that location. In this study, LISA was used to analyze local spatial autocorrelation, resulting in four distinct categories:
 
 - High-High cluster
