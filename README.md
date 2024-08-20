@@ -3,7 +3,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-## What is GeoTB ? <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/treasure-map.png" align="right" alt="" width="120" />
+# What is GeoTB ? <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/treasure-map.png" align="right" alt="" width="120" />
 
 GeoTB is a website created to showcase the results of an ecological
 study on the spatial patterns of tuberculosis (TB) at the sub-district
