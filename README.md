@@ -11,7 +11,7 @@ level in Mueang Khon Kaen District. The study aims to identify and
 visualize the geographic distribution of TB cases to better understand
 the disease’s impact in this area.
 
-### 📌 Why study in Mueang Khon Kaen district ?
+## 📌 Why study in Mueang Khon Kaen district ?
 
 Thailand is one of the 30 countries with the highest TB burden globally.
 Within Thailand, Khon Kaen Province ranks second for the highest
@@ -20,7 +20,7 @@ Mueang Khon Kaen District has the highest TB notification rate in Khon
 Kaen Province. This finding underscores the importance of focusing on
 this district to identify and analyze the spatial patterns of TB.
 
-### Why have to build website ?
+## Why have to build website ?
 
 The GeoTB website was developed using the `pkgdown (version 2.0.7)`
 package in RStudio, featuring an interactive map created primarily with

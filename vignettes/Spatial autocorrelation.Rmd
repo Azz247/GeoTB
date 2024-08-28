@@ -32,8 +32,25 @@ htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/m
 ## Global Spatial Autocorrelation
 A global detection technique was used to assess spatial autocorrelation across the entire study area, providing a single summary measure that describes the overall degree of spatial association in the dataset. The Global Moran’s I statistic (Moran, 1950) was used to calculate the global autocorrelation coefficient. It yields a score ranging between -1 and 1: a positive score indicates clustering of similar values, a negative score indicates dispersion of similar values, and a score close to zero suggests a random spatial distribution
 
-```{r,echo=FALSE}
-htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/GlobalMoran.png" width="65%" />')
+Global Moran’s I statistic equation is:
+
+```{r, echo=FALSE}
+htmltools::HTML(
+  '<div style="font-family: Arial; font-size: 18px;">
+  <br>
+    $$I = \\frac{n}{S_0} \\cdot \\frac{\\sum_{i=1}^{n} \\sum_{j=1}^{n} w_{ij} (x_i - \\bar{x})(x_j - \\bar{x})}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}$$
+    <br>
+    Where:
+    <ul>
+      <li>\\(n\\) is the total number of observations.</li>
+      <li>\\(x_i\\) and \\(x_j\\) are the values of the variable of interest at locations \\(i\\) and \\(j\\).</li>
+      <li>\\(\\bar{x}\\) is the mean of the variable of interest.</li>
+      <li>\\(w_{ij}\\) is the spatial weight between locations \\(i\\) and \\(j\\).</li>
+      <li>\\(S_0 = \\sum_{i=1}^{n} \\sum_{j=1}^{n} w_{ij}\\)</li>
+      <br>
+    </ul>
+  </div>'
+)
 ```
 
 Inference for Global Moran’s I was based on the null hypothesis of spatial randomness. The significance of the Global Moran’s I statistic was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. 	
@@ -42,15 +59,34 @@ Inference for Global Moran’s I was based on the null hypothesis of spatial ran
 Local detection focuses on spatial autocorrelation at specific locations within the study area. The Local Moran’s I statistic was used to calculate local autocorrelation. A positive Local Moran’s I indicates a cluster of similar values, while a negative Local Moran’s I indicates clustering of dissimilar values. If the Local Moran’s I is close to zero, it suggests that there is no significant spatial clustering at that location.
 
 ```{r,echo=FALSE}
-htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/LocalMoran.png" width="60%" />')
+htmltools::HTML(
+  '<div style="font-family: Arial; font-size: 18px;">
+  
+$$I_i = \\frac{\\sum_{j=1}^{n} w_{ij} (x_i - \\bar{x})(x_j - \\bar{x})}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}$$
+<br>
+Where:
+<ul>
+<li>\\(I_i\\) is the Local Moran’s I for observation \\(i\\).</li>
+<li>\\(x_i\\) is the value of the variable of interest at location \\(i\\).</li>
+<li>\\(x_j\\) is the value of the variable at location \\(j\\).</li>
+<li>\\(\\bar{x}\\) is the mean of the variable of interest.</li>
+<li>\\(w_{ij}\\) is the spatial weight between location \\(i\\) and location \\(j\\).</li>
+<li>\\(\\sum_{i=1}^{n} (x_i - \\bar{x})^2\\) is the total sum of squared deviations from the mean.</li>
+<br>
+</ul>
+  </div>'
+)
+
 ```
 
 The significance of the Local Moran’s I statistic for each spatial unit was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. This high number of permutations increases the precision of the significance tests, ensuring more reliable identification of significant spatial clusters. Results are considered significant when the p-value is less than 0.05.
 
 ## Local Indicators of Spatial Association (LISA)
-Local Indicators of Spatial Association (LISA) statistical measures are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation indicates the extent of significant spatial clustering of similar values around that location. In this study, LISA was used to analyze local spatial autocorrelation, resulting in four distinct categories:
+Local Indicators of Spatial Association (LISA), as described by Anselin (1995), are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation reveals the extent of significant spatial clustering of similar values in the vicinity of that location. In this study, LISA was utilized to analyze local spatial autocorrelation, which resulted in four distinct categories:
 
-- High-High cluster
-- High-Low outlier
-- Low-Low cluster
-- Low-High outlier
+- High-High Clusters: Areas where high values cluster with other high values.
+- High-High Clusters: Areas where high values cluster with other high values.
+- High-Low Outliers: Areas with high values surrounded by low values.
+- Low-High Outliers: Areas with low values surrounded by high values.
+
+This classification helps to understand the spatial distribution of the variable of interest and identify patterns of spatial dependence within the study area.
