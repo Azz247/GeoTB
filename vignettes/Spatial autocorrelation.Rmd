@@ -36,7 +36,7 @@ Global Moran’s I statistic equation is:
 
 ```{r, echo=FALSE}
 htmltools::HTML(
-  '<div style="font-family: Arial; font-size: 18px;">
+  '<div style="font-family: Arial; font-size: 16px;">
   <br>
     $$I = \\frac{n}{S_0} \\cdot \\frac{\\sum_{i=1}^{n} \\sum_{j=1}^{n} w_{ij} (x_i - \\bar{x})(x_j - \\bar{x})}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}$$
     <br>
@@ -60,7 +60,7 @@ Local detection focuses on spatial autocorrelation at specific locations within 
 
 ```{r,echo=FALSE}
 htmltools::HTML(
-  '<div style="font-family: Arial; font-size: 18px;">
+  '<div style="font-family: Arial; font-size: 16px;">
   
 $$I_i = \\frac{\\sum_{j=1}^{n} w_{ij} (x_i - \\bar{x})(x_j - \\bar{x})}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}$$
 <br>
