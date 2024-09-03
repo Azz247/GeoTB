@@ -2,19 +2,19 @@ pandoc: 3.1.11
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
+  All-Types-of-Tuberculosis: All-Types-of-Tuberculosis.html
   Dashboard: Dashboard.html
   DashboardIPD: DashboardIPD.html
   Geological_data_65: Geological_data_65.html
   Geological_data_66: Geological_data_66.html
-  GlobalMoran: GlobalMoran.html
-  LocalMoran: LocalMoran.html
   MapOfCIR: MapOfCIR.html
+  Pulmonary-Tuberculosis: Pulmonary-Tuberculosis.html
   Spatial autocorrelation: Spatial autocorrelation.html
-  Subdistrict_2016-2023: Subdistrict_2016-2023.html
+  Subdistrict_2014-2023: Subdistrict_2014-2023.html
   Subdistrict_data_64: Subdistrict_data_64.html
   Subdistrict_data_65: Subdistrict_data_65.html
   Subdistrict_data_66: Subdistrict_data_66.html
   Summary: Summary.html
   Time-series_Map: Time-series_Map.html
-last_built: 2024-09-03T05:13Z
+last_built: 2024-09-03T17:46Z
 

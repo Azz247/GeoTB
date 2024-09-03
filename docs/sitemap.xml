@@ -4,19 +4,13 @@
     <loc>/404.html</loc>
   </url>
   <url>
+    <loc>/articles/All-Types-of-Tuberculosis.html</loc>
+  </url>
+  <url>
     <loc>/articles/Dashboard.html</loc>
   </url>
   <url>
     <loc>/articles/DashboardIPD.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Geological_data_62.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Geological_data_63.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Geological_data_64.html</loc>
   </url>
   <url>
     <loc>/articles/Geological_data_65.html</loc>
@@ -37,16 +31,19 @@
     <loc>/articles/MapOfCIR.html</loc>
   </url>
   <url>
+    <loc>/articles/Pulmonary-Tuberculosis.html</loc>
+  </url>
+  <url>
     <loc>/articles/Spatial autocorrelation.html</loc>
   </url>
   <url>
     <loc>/articles/SubdistrictCombine.html</loc>
   </url>
   <url>
-    <loc>/articles/Subdistrict_2016-2023.html</loc>
+    <loc>/articles/Subdistrict_2014-2023.html</loc>
   </url>
   <url>
-    <loc>/articles/Subdistrict_data_63.html</loc>
+    <loc>/articles/Subdistrict_2016-2023.html</loc>
   </url>
   <url>
     <loc>/articles/Subdistrict_data_64.html</loc>
@@ -82,6 +79,9 @@
     <loc>/reference/index.html</loc>
   </url>
   <url>
+    <loc>/root/All-Types-of-Tuberculosis.html</loc>
+  </url>
+  <url>
     <loc>/root/Combine_subdistrict_MueangKK.html</loc>
   </url>
   <url>
@@ -107,6 +107,9 @@
   </url>
   <url>
     <loc>/root/MapOfCrudeIncidence.html</loc>
+  </url>
+  <url>
+    <loc>/root/Pulmonary-Tuberculosis.html</loc>
   </url>
   <url>
     <loc>/root/SubdistrictMap_62.html</loc>

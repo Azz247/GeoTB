@@ -1,8 +1,8 @@
 ---
-title: "Subdistrict_data_64"
+title: "All Types of Tuberculosis"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Subdistrict_data_64}
+  %\VignetteIndexEntry{All Types of Tuberculosis}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,6 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
+<<<<<<< HEAD
 ```{r}
 htmltools::HTML('<style>
 .dashboard {
@@ -31,7 +32,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://azz247.github.io/GeoTB/root/SubdistrictMap_64.html">
+<iframe src="https://azz247.github.io/GeoTB/root/All-Types-of-Tuberculosis.html">
 </iframe>
 </div>')
 ```

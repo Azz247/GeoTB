@@ -25,7 +25,7 @@ navbar:
       text: Sub-district Map
       menu:
       - text: Map of tuberculosis patient numbers
-        href: articles/Subdistrict_2016-2023.html
+        href: articles/Subdistrict_2014-2023.html
       - text: Map of Crude Incidence Rate
         href: articles/MapOfCIR.html
     articles:
@@ -33,10 +33,10 @@ navbar:
       menu:
       - text: Overview
         href: articles/Spatial autocorrelation.html
-      - text: Global Autocorrelation
-        href: articles/GlobalMoran.html
-      - text: Local Autocorrelation
-        href: articles/LocalMoran.html
+      - text: All Types of Tuberculosis
+        href: articles/All-Types-of-Tuberculosis.html
+      - text: Pulmonary Tuberculosis
+        href: articles/Pulmonary-Tuberculosis.html
     news:
       text: Time-series Map
       href: articles/Time-series_Map.html
