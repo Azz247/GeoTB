@@ -1,8 +1,8 @@
 ---
-title: "Pulmonary-Tuberculosis.html"
+title: "Pulmonary-Tuberculosis"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Pulmonary-Tuberculosis.html}
+  %\VignetteIndexEntry{Pulmonary-Tuberculosis}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
