@@ -85,7 +85,7 @@ The significance of the Local Moran’s I statistic for each spatial unit was ev
 Local Indicators of Spatial Association (LISA), as described by Anselin (1995), are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation reveals the extent of significant spatial clustering of similar values in the vicinity of that location. In this study, LISA was utilized to analyze local spatial autocorrelation, which resulted in four distinct categories:
 
 - High-High Clusters: Areas where high values cluster with other high values.
-- High-High Clusters: Areas where high values cluster with other high values.
+- Low-Low Clusters: Areas where low values cluster with other low values.
 - High-Low Outliers: Areas with high values surrounded by low values.
 - Low-High Outliers: Areas with low values surrounded by high values.
 
