@@ -159,7 +159,7 @@ calculate the global autocorrelation coefficient. It yields a score
 ranging between -1 and 1: a positive score indicates clustering of
 similar values, a negative score indicates dispersion of similar values,
 and a score close to zero suggests a random spatial distribution</p>
-<p>Global Moran’s I statistic equation is:</p>
+<p>Global Moran’s I statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
   <br>
     $$I = \frac{n}{S_0} \cdot \frac{\sum_{i=1}^{n} \sum_{j=1}^{n} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$$
@@ -190,6 +190,7 @@ a cluster of similar values, while a negative Local Moran’s I indicates
 clustering of dissimilar values. If the Local Moran’s I is close to
 zero, it suggests that there is no significant spatial clustering at
 that location.</p>
+<p>Local Moran’s I statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
   
 $$I_i = \frac{\sum_{j=1}^{n} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$$
@@ -222,7 +223,7 @@ around specific geographical points or areal units. Each observation
 reveals the extent of significant spatial clustering of similar values
 in the vicinity of that location. In this study, LISA was utilized to
 analyze local spatial autocorrelation, which resulted in four distinct
-categories:</p>
+categories<sup><a href="#ref2">2</a></sup>:</p>
 <ul>
 <li>High-High Clusters: Areas where high values cluster with other high
 values.</li>
@@ -236,6 +237,20 @@ values.</li>
 <p>ㅤThis classification helps to understand the spatial distribution of
 the variable of interest and identify patterns of spatial dependence
 within the study area.</p>
+<p><mark style="font-size: 16px; background-color : lightblue; ">Moran
+scatter plot</mark></p>
+<p>ㅤThe Moran scatter plot, introduced by Anselin (1996), plots the
+spatially lagged variable on the y-axis and the original variable on the
+x-axis. The slope of the linear fit represents Moran’s I. For a variable
+<span class="math inline">\(Z\)</span> in deviations from the mean and
+row-standardized weights where <span class="math inline">\(S_0\)</span>
+equals the number of observations <span class="math inline">\(N\)</span>, Moran’s I simplifies to<sup><a href="#ref3">3</a></sup>:</p>
+<div style="font-family: Arial; font-size: 16px;">
+<br>
+$$I = \frac{\sum_i \sum_j w_{ij} z_i z_j}{\sum_i z_i^2} = \frac{\sum_i (z_i \times \sum_j w_{ij} z_j)}{\sum_i z_i^2}$$
+<br>
+</div>
+<p>In this context, the slope of the regression of <span class="math inline">\(\sum_j w_{ij} z_j\)</span> on <span class="math inline">\(z_i\)</span> represents Moran’s I.</p>
 </div>
 <div class="section level2">
 <h2 id="inference">Inference<a class="anchor" aria-label="anchor" href="#inference"></a>
@@ -246,11 +261,11 @@ hypothesis</mark></p>
 spatial randomness, with the statistic’s distribution derived either
 under the assumption of normality (independent normal random variates)
 or randomization (where each value is equally likely at any
-location).</p>
+location)<sup><a href="#ref3">3</a></sup>.</p>
 <p><mark style="font-size: 16px; background-color : lightblue; ">Pseudo
 p-value</mark></p>
 <p>ㅤThe reference distribution is used to calculate a pseudo p-value
-as</p>
+as<sup><a href="#ref3">3</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
   
 $$p = \frac{R + 1}{M + 1}$$
@@ -259,8 +274,21 @@ Where:
 <li>\(p\) is the pseudo p-value.</li>
 <li>\(R\) is the number of times the computed Moran's I from permuted data is equal to or more extreme than the observed statistic.</li>
 <li>\(M\) is the number of permutations.</li>
+<br>
 </ul>
 </div>
+</div>
+<div class="section level2">
+<h2 id="reference">Reference<a class="anchor" aria-label="anchor" href="#reference"></a>
+</h2>
+<p><a id="ref1"></a>(1) Bivand RS, Wong DW. Comparing implementations of
+global and local indicators of spatial association. Test.
+2018;27(3):716-48.</p>
+<p><a id="ref2"></a>(2) Anselin L. Local indicators of spatial
+association—LISA. Geogr Anal. 1995;27(2):93-115</p>
+<p><a id="ref3"></a>(3) GeoDa Center for Geospatial Analysis and
+Computation. Global Spatial Autocorrelation (Lab 5A). Available at: <a href="https://geodacenter.github.io/workbook/5a_global_auto/lab5a.html" class="external-link uri">https://geodacenter.github.io/workbook/5a_global_auto/lab5a.html</a>.
+[Accessed 8 September 2024.]</p>
 </div>
   </div>
 

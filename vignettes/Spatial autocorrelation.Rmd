@@ -32,7 +32,7 @@ htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/m
 ## Global Spatial Autocorrelation
 ㅤA global detection technique was used to assess spatial autocorrelation across the entire study area, providing a single summary measure that describes the overall degree of spatial association in the dataset. The Global Moran’s I statistic (Moran, 1950) was used to calculate the global autocorrelation coefficient. It yields a score ranging between -1 and 1: a positive score indicates clustering of similar values, a negative score indicates dispersion of similar values, and a score close to zero suggests a random spatial distribution
 
-Global Moran’s I statistic equation is:
+Global Moran’s I statistic equation is <sup>[1](#ref1)</sup>:
 
 ```{r, echo=FALSE}
 htmltools::HTML(
@@ -59,6 +59,8 @@ htmltools::HTML(
 ## Local Spatial Autocorrelation
 ㅤLocal detection focuses on spatial autocorrelation at specific locations within the study area. The Local Moran’s I statistic was used to calculate local autocorrelation. A positive Local Moran’s I indicates a cluster of similar values, while a negative Local Moran’s I indicates clustering of dissimilar values. If the Local Moran’s I is close to zero, it suggests that there is no significant spatial clustering at that location.
 
+Local Moran’s I statistic equation is <sup>[1](#ref1)</sup>:
+
 ```{r,echo=FALSE}
 htmltools::HTML(
   '<div style="font-family: Arial; font-size: 16px;">
@@ -83,7 +85,7 @@ Where:
 ㅤThe significance of the Local Moran’s I statistic for each spatial unit was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. This high number of permutations increases the precision of the significance tests, ensuring more reliable identification of significant spatial clusters. Results are considered significant when the p-value is less than 0.05.
 
 ## Local Indicators of Spatial Association (LISA)
-ㅤLocal Indicators of Spatial Association (LISA), as described by Anselin (1995), are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation reveals the extent of significant spatial clustering of similar values in the vicinity of that location. In this study, LISA was utilized to analyze local spatial autocorrelation, which resulted in four distinct categories:
+ㅤLocal Indicators of Spatial Association (LISA), as described by Anselin (1995), are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation reveals the extent of significant spatial clustering of similar values in the vicinity of that location. In this study, LISA was utilized to analyze local spatial autocorrelation, which resulted in four distinct categories<sup>[2](#ref2)</sup>:
 
 - High-High Clusters: Areas where high values cluster with other high values.
 - Low-Low Clusters: Areas where low values cluster with other low values.
@@ -92,16 +94,32 @@ Where:
 
 ㅤThis classification helps to understand the spatial distribution of the variable of interest and identify patterns of spatial dependence within the study area.
 
+<mark style = "font-size: 16px; background-color : lightblue; ">Moran scatter plot</mark>
+
+ㅤThe Moran scatter plot, introduced by Anselin (1996), plots the spatially lagged variable on the y-axis and the original variable on the x-axis. The slope of the linear fit represents Moran’s I. For a variable \( Z \) in deviations from the mean and row-standardized weights where \( S_0 \) equals the number of observations \( N \), Moran’s I simplifies to<sup>[3](#ref3)</sup>:
+
+```{r,echo=FALSE}
+htmltools::HTML(
+  '<div style="font-family: Arial; font-size: 16px;">
+<br>
+$$I = \\frac{\\sum_i \\sum_j w_{ij} z_i z_j}{\\sum_i z_i^2} = \\frac{\\sum_i (z_i \\times \\sum_j w_{ij} z_j)}{\\sum_i z_i^2}$$
+<br>
+  </div>'
+)
+```
+
+In this context, the slope of the regression of \( \sum_j w_{ij} z_j \) on \( z_i \) represents Moran’s I.
+
 ## Inference
 
 <mark style = "font-size: 16px; background-color : lightblue; ">Null hypothesis</mark> 
 
-ㅤPermutation inference for Moran’s I relies on a null hypothesis of spatial randomness, with the statistic's distribution derived either under the assumption of normality (independent normal random variates) or randomization (where each value is equally likely at any location).
+ㅤPermutation inference for Moran’s I relies on a null hypothesis of spatial randomness, with the statistic's distribution derived either under the assumption of normality (independent normal random variates) or randomization (where each value is equally likely at any location)<sup>[3](#ref3)</sup>.
 
 
 <mark style = "font-size: 16px; background-color : lightblue; ">Pseudo p-value</mark>
 
-ㅤThe reference distribution is used to calculate a pseudo p-value as 
+ㅤThe reference distribution is used to calculate a pseudo p-value as<sup>[3](#ref3)</sup>:
 
 ```{r,echo=FALSE}
 htmltools::HTML(
@@ -113,7 +131,15 @@ Where:
 <li>\\(p\\) is the pseudo p-value.</li>
 <li>\\(R\\) is the number of times the computed Moran\'s I from permuted data is equal to or more extreme than the observed statistic.</li>
 <li>\\(M\\) is the number of permutations.</li>
+<br>
 </ul>
   </div>'
 )
 ```
+
+## Reference
+<a id="ref1"></a>(1) Bivand RS, Wong DW. Comparing implementations of global and local indicators of spatial association. Test. 2018;27(3):716-48.
+
+<a id="ref2"></a>(2) Anselin L. Local indicators of spatial association—LISA. Geogr Anal. 1995;27(2):93-115
+
+<a id="ref3"></a>(3) GeoDa Center for Geospatial Analysis and Computation. Global Spatial Autocorrelation (Lab 5A). Available at: https://geodacenter.github.io/workbook/5a_global_auto/lab5a.html. [Accessed 8 September 2024.]
