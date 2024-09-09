@@ -9,7 +9,6 @@ navbar:
     - articles
     - news
     - reference
-
     right: github
   components:
     tutorials:
@@ -43,3 +42,5 @@ navbar:
     reference:
       text: Reference
       href: reference/index.html
+template:
+  light-switch: true

@@ -120,10 +120,10 @@
 
     
     
-<p>Spatial autocorrelation refers to a clustering pattern in the spatial
-distribution of a variable, indicating the extent to which a variable is
-spatially correlated with itself. Positive autocorrelation (or
-clustering) occurs when neighboring observations are more similar to
+<p>ㅤSpatial autocorrelation refers to a clustering pattern in the
+spatial distribution of a variable, indicating the extent to which a
+variable is spatially correlated with itself. Positive autocorrelation
+(or clustering) occurs when neighboring observations are more similar to
 each other, while negative autocorrelation (or dispersion) occurs when
 neighboring observations tend to differ. This technique can be divided
 into two main methods:</p>
@@ -136,7 +136,7 @@ Autocorrelation</a></li>
 <div class="section level2">
 <h2 id="spatial-weight">Spatial weight<a class="anchor" aria-label="anchor" href="#spatial-weight"></a>
 </h2>
-<p>In the first step, we identify the spatial weight matrix (W) as a
+<p>ㅤIn the first step, we identify the spatial weight matrix (W) as a
 square binary matrix based on queen contiguity. The concept of queen
 contiguity considers adjacent neighbors that mutually share borders and
 edges. In this square binary matrix, if units i and j share a border,
@@ -151,7 +151,7 @@ below.</p>
 <div class="section level2">
 <h2 id="global-spatial-autocorrelation">Global Spatial Autocorrelation<a class="anchor" aria-label="anchor" href="#global-spatial-autocorrelation"></a>
 </h2>
-<p>A global detection technique was used to assess spatial
+<p>ㅤA global detection technique was used to assess spatial
 autocorrelation across the entire study area, providing a single summary
 measure that describes the overall degree of spatial association in the
 dataset. The Global Moran’s I statistic (Moran, 1950) was used to
@@ -166,7 +166,8 @@ and a score close to zero suggests a random spatial distribution</p>
     <br>
     Where:
     <ul>
-<li>\(n\) is the total number of observations.</li>
+<li>\(I\) is the Global Moran’s I for observation \(i\).</li>
+      <li>\(n\) is the total number of observations.</li>
       <li>\(x_i\) and \(x_j\) are the values of the variable of interest at locations \(i\) and \(j\).</li>
       <li>\(\bar{x}\) is the mean of the variable of interest.</li>
       <li>\(w_{ij}\) is the spatial weight between locations \(i\) and \(j\).</li>
@@ -174,7 +175,7 @@ and a score close to zero suggests a random spatial distribution</p>
       <br>
 </ul>
 </div>
-<p>Inference for Global Moran’s I was based on the null hypothesis of
+<p>ㅤInference for Global Moran’s I was based on the null hypothesis of
 spatial randomness. The significance of the Global Moran’s I statistic
 was evaluated using a permutation test distribution, with 99,999 random
 permutations computed using <code>GeoDa (version 1.22)</code>.</p>
@@ -182,7 +183,7 @@ permutations computed using <code>GeoDa (version 1.22)</code>.</p>
 <div class="section level2">
 <h2 id="local-spatial-autocorrelation">Local Spatial Autocorrelation<a class="anchor" aria-label="anchor" href="#local-spatial-autocorrelation"></a>
 </h2>
-<p>Local detection focuses on spatial autocorrelation at specific
+<p>ㅤLocal detection focuses on spatial autocorrelation at specific
 locations within the study area. The Local Moran’s I statistic was used
 to calculate local autocorrelation. A positive Local Moran’s I indicates
 a cluster of similar values, while a negative Local Moran’s I indicates
@@ -204,7 +205,7 @@ Where:
 <br>
 </ul>
 </div>
-<p>The significance of the Local Moran’s I statistic for each spatial
+<p>ㅤThe significance of the Local Moran’s I statistic for each spatial
 unit was evaluated using a permutation test distribution, with 99,999
 random permutations computed using <code>GeoDa (version 1.22)</code>.
 This high number of permutations increases the precision of the
@@ -215,7 +216,7 @@ less than 0.05.</p>
 <div class="section level2">
 <h2 id="local-indicators-of-spatial-association-lisa">Local Indicators of Spatial Association (LISA)<a class="anchor" aria-label="anchor" href="#local-indicators-of-spatial-association-lisa"></a>
 </h2>
-<p>Local Indicators of Spatial Association (LISA), as described by
+<p>ㅤLocal Indicators of Spatial Association (LISA), as described by
 Anselin (1995), are used to identify the magnitude of spatial clustering
 around specific geographical points or areal units. Each observation
 reveals the extent of significant spatial clustering of similar values
@@ -232,9 +233,34 @@ values.</li>
 <li>Low-High Outliers: Areas with low values surrounded by high
 values.</li>
 </ul>
-<p>This classification helps to understand the spatial distribution of
+<p>ㅤThis classification helps to understand the spatial distribution of
 the variable of interest and identify patterns of spatial dependence
 within the study area.</p>
+</div>
+<div class="section level2">
+<h2 id="inference">Inference<a class="anchor" aria-label="anchor" href="#inference"></a>
+</h2>
+<p><mark style="font-size: 16px; background-color : lightblue; ">Null
+hypothesis</mark></p>
+<p>ㅤPermutation inference for Moran’s I relies on a null hypothesis of
+spatial randomness, with the statistic’s distribution derived either
+under the assumption of normality (independent normal random variates)
+or randomization (where each value is equally likely at any
+location).</p>
+<p><mark style="font-size: 16px; background-color : lightblue; ">Pseudo
+p-value</mark></p>
+<p>ㅤThe reference distribution is used to calculate a pseudo p-value
+as</p>
+<div style="font-family: Arial; font-size: 16px;">
+  
+$$p = \frac{R + 1}{M + 1}$$
+Where:
+<ul>
+<li>\(p\) is the pseudo p-value.</li>
+<li>\(R\) is the number of times the computed Moran's I from permuted data is equal to or more extreme than the observed statistic.</li>
+<li>\(M\) is the number of permutations.</li>
+</ul>
+</div>
 </div>
   </div>
 

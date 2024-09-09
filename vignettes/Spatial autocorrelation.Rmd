@@ -17,20 +17,20 @@ knitr::opts_chunk$set(
 )
 ```
 
-Spatial autocorrelation refers to a clustering pattern in the spatial distribution of a variable, indicating the extent to which a variable is spatially correlated with itself. Positive autocorrelation (or clustering) occurs when neighboring observations are more similar to each other, while negative autocorrelation (or dispersion) occurs when neighboring observations tend to differ. This technique can be divided into two main methods:
+ㅤSpatial autocorrelation refers to a clustering pattern in the spatial distribution of a variable, indicating the extent to which a variable is spatially correlated with itself. Positive autocorrelation (or clustering) occurs when neighboring observations are more similar to each other, while negative autocorrelation (or dispersion) occurs when neighboring observations tend to differ. This technique can be divided into two main methods:
 
 - [Global Spatial Autocorrelation](#global-spatial-autocorrelation)
 - [Local Spatial Autocorrelation](#local-spatial-autocorrelation)
 
 ## Spatial weight
-In the first step, we identify the spatial weight matrix (W) as a square binary matrix based on queen contiguity. The concept of queen contiguity considers adjacent neighbors that mutually share borders and edges. In this square binary matrix, if units i and j share a border, the matrix weight (wij) is set to 1; if they do not share a border, (wij) is set to 0. The diagonal elements of the weight matrix (wii) are also set to 0. In this study, Spatial weight of 18 locations(sub-district) was evaluated and calculated queen contiguity by using `GeoDa (version 1.22)` as presented in the figure below.
+ㅤIn the first step, we identify the spatial weight matrix (W) as a square binary matrix based on queen contiguity. The concept of queen contiguity considers adjacent neighbors that mutually share borders and edges. In this square binary matrix, if units i and j share a border, the matrix weight (wij) is set to 1; if they do not share a border, (wij) is set to 0. The diagonal elements of the weight matrix (wii) are also set to 0. In this study, Spatial weight of 18 locations(sub-district) was evaluated and calculated queen contiguity by using `GeoDa (version 1.22)` as presented in the figure below.
 
 ```{r,echo=FALSE}
 htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" width="80%" />')
 ```
 
 ## Global Spatial Autocorrelation
-A global detection technique was used to assess spatial autocorrelation across the entire study area, providing a single summary measure that describes the overall degree of spatial association in the dataset. The Global Moran’s I statistic (Moran, 1950) was used to calculate the global autocorrelation coefficient. It yields a score ranging between -1 and 1: a positive score indicates clustering of similar values, a negative score indicates dispersion of similar values, and a score close to zero suggests a random spatial distribution
+ㅤA global detection technique was used to assess spatial autocorrelation across the entire study area, providing a single summary measure that describes the overall degree of spatial association in the dataset. The Global Moran’s I statistic (Moran, 1950) was used to calculate the global autocorrelation coefficient. It yields a score ranging between -1 and 1: a positive score indicates clustering of similar values, a negative score indicates dispersion of similar values, and a score close to zero suggests a random spatial distribution
 
 Global Moran’s I statistic equation is:
 
@@ -42,6 +42,7 @@ htmltools::HTML(
     <br>
     Where:
     <ul>
+      <li>\\(I\\) is the Global Moran’s I for observation \\(i\\).</li>
       <li>\\(n\\) is the total number of observations.</li>
       <li>\\(x_i\\) and \\(x_j\\) are the values of the variable of interest at locations \\(i\\) and \\(j\\).</li>
       <li>\\(\\bar{x}\\) is the mean of the variable of interest.</li>
@@ -53,10 +54,10 @@ htmltools::HTML(
 )
 ```
 
-Inference for Global Moran’s I was based on the null hypothesis of spatial randomness. The significance of the Global Moran’s I statistic was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. 	
+ㅤInference for Global Moran’s I was based on the null hypothesis of spatial randomness. The significance of the Global Moran’s I statistic was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. 	
 
 ## Local Spatial Autocorrelation
-Local detection focuses on spatial autocorrelation at specific locations within the study area. The Local Moran’s I statistic was used to calculate local autocorrelation. A positive Local Moran’s I indicates a cluster of similar values, while a negative Local Moran’s I indicates clustering of dissimilar values. If the Local Moran’s I is close to zero, it suggests that there is no significant spatial clustering at that location.
+ㅤLocal detection focuses on spatial autocorrelation at specific locations within the study area. The Local Moran’s I statistic was used to calculate local autocorrelation. A positive Local Moran’s I indicates a cluster of similar values, while a negative Local Moran’s I indicates clustering of dissimilar values. If the Local Moran’s I is close to zero, it suggests that there is no significant spatial clustering at that location.
 
 ```{r,echo=FALSE}
 htmltools::HTML(
@@ -79,14 +80,40 @@ Where:
 
 ```
 
-The significance of the Local Moran’s I statistic for each spatial unit was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. This high number of permutations increases the precision of the significance tests, ensuring more reliable identification of significant spatial clusters. Results are considered significant when the p-value is less than 0.05.
+ㅤThe significance of the Local Moran’s I statistic for each spatial unit was evaluated using a permutation test distribution, with 99,999 random permutations computed using `GeoDa (version 1.22)`. This high number of permutations increases the precision of the significance tests, ensuring more reliable identification of significant spatial clusters. Results are considered significant when the p-value is less than 0.05.
 
 ## Local Indicators of Spatial Association (LISA)
-Local Indicators of Spatial Association (LISA), as described by Anselin (1995), are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation reveals the extent of significant spatial clustering of similar values in the vicinity of that location. In this study, LISA was utilized to analyze local spatial autocorrelation, which resulted in four distinct categories:
+ㅤLocal Indicators of Spatial Association (LISA), as described by Anselin (1995), are used to identify the magnitude of spatial clustering around specific geographical points or areal units. Each observation reveals the extent of significant spatial clustering of similar values in the vicinity of that location. In this study, LISA was utilized to analyze local spatial autocorrelation, which resulted in four distinct categories:
 
 - High-High Clusters: Areas where high values cluster with other high values.
 - Low-Low Clusters: Areas where low values cluster with other low values.
 - High-Low Outliers: Areas with high values surrounded by low values.
 - Low-High Outliers: Areas with low values surrounded by high values.
 
-This classification helps to understand the spatial distribution of the variable of interest and identify patterns of spatial dependence within the study area.
+ㅤThis classification helps to understand the spatial distribution of the variable of interest and identify patterns of spatial dependence within the study area.
+
+## Inference
+
+<mark style = "font-size: 16px; background-color : lightblue; ">Null hypothesis</mark> 
+
+ㅤPermutation inference for Moran’s I relies on a null hypothesis of spatial randomness, with the statistic's distribution derived either under the assumption of normality (independent normal random variates) or randomization (where each value is equally likely at any location).
+
+
+<mark style = "font-size: 16px; background-color : lightblue; ">Pseudo p-value</mark>
+
+ㅤThe reference distribution is used to calculate a pseudo p-value as 
+
+```{r,echo=FALSE}
+htmltools::HTML(
+  '<div style="font-family: Arial; font-size: 16px;">
+  
+$$p = \\frac{R + 1}{M + 1}$$
+Where:
+<ul>
+<li>\\(p\\) is the pseudo p-value.</li>
+<li>\\(R\\) is the number of times the computed Moran\'s I from permuted data is equal to or more extreme than the observed statistic.</li>
+<li>\\(M\\) is the number of permutations.</li>
+</ul>
+  </div>'
+)
+```

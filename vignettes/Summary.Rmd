@@ -16,21 +16,21 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-According to the data visualization, it has been revealed that most residential addresses of patients at the time of diagnosis are in Khon Kaen, with the majority at the district level being in Mueang Khon Kaen District. The proportion of male to female patients is approximately 70 percent to 30 percent. We also found interesting numbers that reveal unexpected trends and information as follows:
+ㅤAccording to the data visualization, it has been revealed that most residential addresses of patients at the time of diagnosis are in Khon Kaen, with the majority at the district level being in Mueang Khon Kaen District. The proportion of male to female patients is approximately 70 percent to 30 percent. We also found interesting numbers that reveal unexpected trends and information as follows:
 
 - [Number of patients](#number-of-patients)
 - [Trend of Patient Age](#trend-of-patient-age)
 - [Mortality trend](#mortality-trend)
 
 
-First of all, we reviewed tuberculosis (TB) case notifications from 2014 to 2023 provided by the medical information group at Khon Kaen Hospital, which includes both outpatient department (OPD) and inpatient department (IPD) data. We combined the OPD and IPD data for each year, then removed duplicate patients to determine the number of TB incidences from 2014 to 2023, as presented in the figure below.
+ㅤFirst of all, we reviewed tuberculosis (TB) case notifications from 2014 to 2023 provided by the medical information group at Khon Kaen Hospital, which includes both outpatient department (OPD) and inpatient department (IPD) data. We combined the OPD and IPD data for each year, then removed duplicate patients to determine the number of TB incidences from 2014 to 2023, as presented in the figure below.
 
 ```{r,echo=FALSE}
 htmltools::HTML('
                 <br>
                 <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/TrendAllpt.png" width="80%" />')
 ```
-The figure shows that the number of patients increased from 2,846 in 2014 to 3,112 in 2016, peaking at 3,177 in 2019 before decreasing to a low of 2,349 in 2022. When divided by gender, the trend for male patients more closely resembles the overall trend compared to the trend for female patients. Unlike the male and total trends, the female patient count does not show a sharp peak and decline, but rather a more stable and slightly downward trend.
+ㅤThe figure shows that the number of patients increased from 2,846 in 2014 to 3,112 in 2016, peaking at 3,177 in 2019 before decreasing to a low of 2,349 in 2022. When divided by gender, the trend for male patients more closely resembles the overall trend compared to the trend for female patients. Unlike the male and total trends, the female patient count does not show a sharp peak and decline, but rather a more stable and slightly downward trend.
 
 ## Number of patients
 
@@ -38,7 +38,7 @@ The figure shows that the number of patients increased from 2,846 in 2014 to 3,1
 htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/NumberPt_OPD.png" width="80%" />')
 ```
 
-OPD data show that the number of patients increased from 2014 to 2020, followed by a decrease from 2020 to 2023. When divided by gender, the overall trend appears to be more influenced by male patients, possibly because there are more male patients than female patients.
+ㅤOPD data show that the number of patients increased from 2014 to 2020, followed by a decrease from 2020 to 2023. When divided by gender, the overall trend appears to be more influenced by male patients, possibly because there are more male patients than female patients.
 
 ```{r,echo=FALSE}
 htmltools::HTML('
@@ -46,7 +46,7 @@ htmltools::HTML('
                 <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/NumberPt_IPD.png" width="80%" />')
 ```
 
-IPD data show that the number of patients is around 900 to 1,000 per year, with a slight increase from 2014 to 2019 and a stable trend from 2019 to 2023. Similar to the OPD data, the overall trend appears to be influenced more by the male trend, while the female trend is relatively stable.
+ㅤIPD data show that the number of patients is around 900 to 1,000 per year, with a slight increase from 2014 to 2019 and a stable trend from 2019 to 2023. Similar to the OPD data, the overall trend appears to be influenced more by the male trend, while the female trend is relatively stable.
 
 ## Trend of Patient Age
 
@@ -54,14 +54,14 @@ IPD data show that the number of patients is around 900 to 1,000 per year, with 
 htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/PatientAge_OPD.png" width="80%" />')
 ```
 
-We found that the trend in the age of female patients in OPD data shows a clear decrease, from a median age of 59 years in 2014 to 54 years in 2023. The trend for male patients decreased from a median age of 56 years in 2015 to 53 years in 2018, then increased to 55 years in 2022.
+ㅤWe found that the trend in the age of female patients in OPD data shows a clear decrease, from a median age of 59 years in 2014 to 54 years in 2023. The trend for male patients decreased from a median age of 56 years in 2015 to 53 years in 2018, then increased to 55 years in 2022.
 
 ```{r,echo=FALSE}
 htmltools::HTML('<br>
                 <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/PatientAge_IPD.png" width="80%" />')
 ```
 
-IPD data show that the trend in the age of female patients is decreasing, from a median age of 61.5 years in 2014 to 58 years in 2023, while the trend in the age of male patients is relatively stable.
+ㅤIPD data show that the trend in the age of female patients is decreasing, from a median age of 61.5 years in 2014 to 58 years in 2023, while the trend in the age of male patients is relatively stable.
 
 ## Mortality trend
 
@@ -69,4 +69,4 @@ IPD data show that the trend in the age of female patients is decreasing, from a
 htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/Death.png" width="80%" />')
 ```
 
-We have data on the number of all-cause deaths among tuberculosis patients in the hospital each year from IPD data. This shows that the number of deaths in the hospital was relatively stable from 2014 to 2020, but there is an increasing trend from 49 persons per year in 2020 to 95 persons per year in 2023. When divided by gender, we see an interesting trend where the increase in overall mortality from 2021 to 2023 is mainly driven by the male trend, while the female trend shows only a slight increase from 2020 to 2023.
+ㅤWe have data on the number of all-cause deaths among tuberculosis patients in the hospital each year from IPD data. This shows that the number of deaths in the hospital was relatively stable from 2014 to 2020, but there is an increasing trend from 49 persons per year in 2020 to 95 persons per year in 2023. When divided by gender, we see an interesting trend where the increase in overall mortality from 2021 to 2023 is mainly driven by the male trend, while the female trend shows only a slight increase from 2020 to 2023.
