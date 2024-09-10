@@ -136,16 +136,15 @@ Autocorrelation</a></li>
 <div class="section level2">
 <h2 id="spatial-weight">Spatial weight<a class="anchor" aria-label="anchor" href="#spatial-weight"></a>
 </h2>
-<p>ㅤIn the first step, we identify the spatial weight matrix (W) as a
-square binary matrix based on queen contiguity. The concept of queen
-contiguity considers adjacent neighbors that mutually share borders and
-edges. In this square binary matrix, if units i and j share a border,
-the matrix weight (wij) is set to 1; if they do not share a border,
-(wij) is set to 0. The diagonal elements of the weight matrix (wii) are
-also set to 0. In this study, Spatial weight of 18
-locations(sub-district) was evaluated and calculated queen contiguity by
-using <code>GeoDa (version 1.22)</code> as presented in the figure
-below.</p>
+<p>ㅤIn the first step, we identify the spatial weight matrix <span class="math inline">\((W)\)</span> as a square binary matrix based on
+queen contiguity. The concept of queen contiguity considers adjacent
+neighbors that mutually share borders and edges. In this square binary
+matrix, if units i and j share a border, the matrix weight <span class="math inline">\((w_{ij})\)</span> is set to 1; if they do not
+share a border,<span class="math inline">\((w_{ij})\)</span> is set to
+0. The diagonal elements of the weight matrix <span class="math inline">\((w_{ii})\)</span> are also set to 0. In this
+study, Spatial weight of 18 locations(sub-district) was evaluated and
+calculated queen contiguity by using <code>GeoDa (version 1.22)</code>
+as presented in the figure below.</p>
 <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" width="80%">
 </div>
 <div class="section level2">
@@ -158,8 +157,9 @@ dataset. The Global Moran’s I statistic (Moran, 1950) was used to
 calculate the global autocorrelation coefficient. It yields a score
 ranging between -1 and 1: a positive score indicates clustering of
 similar values, a negative score indicates dispersion of similar values,
-and a score close to zero suggests a random spatial distribution</p>
-<p>Global Moran’s I statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
+and a score close to zero suggests a random spatial distribution.</p>
+<p><mark style="font-size: 16px; background-color : lightblue; ">Global
+Moran’s I</mark> statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
   <br>
     $$I = \frac{n}{S_0} \cdot \frac{\sum_{i=1}^{n} \sum_{j=1}^{n} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$$
@@ -190,7 +190,8 @@ a cluster of similar values, while a negative Local Moran’s I indicates
 clustering of dissimilar values. If the Local Moran’s I is close to
 zero, it suggests that there is no significant spatial clustering at
 that location.</p>
-<p>Local Moran’s I statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
+<p><mark style="font-size: 16px; background-color : lightblue; ">Local
+Moran’s I</mark> statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
   
 $$I_i = \frac{\sum_{j=1}^{n} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$$
