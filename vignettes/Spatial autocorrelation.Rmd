@@ -26,7 +26,7 @@ knitr::opts_chunk$set(
 ㅤIn the first step, we identify the spatial weight matrix \(  (W) \) as a square binary matrix based on queen contiguity. The concept of queen contiguity considers adjacent neighbors that mutually share borders and edges. In this square binary matrix, if units i and j share a border, the matrix weight \( (w_{ij}) \) is set to 1; if they do not share a border,\( (w_{ij}) \) is set to 0. The diagonal elements of the weight matrix \( (w_{ii}) \) are also set to 0. In this study, Spatial weight of 18 locations(sub-district) was evaluated and calculated queen contiguity by using `GeoDa (version 1.22)` as presented in the figure below.
 
 ```{r,echo=FALSE}
-htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" width="80%" />')
+htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" alt="Spartial weight" width="80%" />')
 ```
 
 ## Global Spatial Autocorrelation
@@ -59,7 +59,7 @@ htmltools::HTML(
 ## Local Spatial Autocorrelation
 ㅤLocal detection focuses on spatial autocorrelation at specific locations within the study area. The Local Moran’s I statistic was used to calculate local autocorrelation. A positive Local Moran’s I indicates a cluster of similar values, while a negative Local Moran’s I indicates clustering of dissimilar values. If the Local Moran’s I is close to zero, it suggests that there is no significant spatial clustering at that location.
 
-<mark style = "font-size: 16px; background-color : lightblue; ">Local Moran’s I</mark> statistic equation is <sup>[1](#ref1)</sup>:
+<mark style = "font-size: 16px; background-color : lightblue; ">Local Moran’s I</mark> statistic equation is <sup>[2](#ref2)</sup>:
 
 ```{r,echo=FALSE}
 htmltools::HTML(

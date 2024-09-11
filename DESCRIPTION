@@ -13,3 +13,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://azz247.github.io/GeoTB

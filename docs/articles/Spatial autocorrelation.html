@@ -6,20 +6,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Spatial autocorrelation • GeoTB</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Spatial autocorrelation">
-<meta property="og:description" content="GeoTB">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -42,7 +41,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dashboard
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -60,7 +59,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Sub-district Map
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -75,7 +74,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Spatial Autocorrelation
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -105,7 +104,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
@@ -113,7 +112,7 @@
       <h1 data-toc-skip>Spatial autocorrelation</h1>
             
       
-      
+
       <div class="hidden name"><code>Spatial autocorrelation.Rmd</code></div>
 
     </div>
@@ -136,16 +135,22 @@ Autocorrelation</a></li>
 <div class="section level2">
 <h2 id="spatial-weight">Spatial weight<a class="anchor" aria-label="anchor" href="#spatial-weight"></a>
 </h2>
-<p>ㅤIn the first step, we identify the spatial weight matrix <span class="math inline">\((W)\)</span> as a square binary matrix based on
-queen contiguity. The concept of queen contiguity considers adjacent
-neighbors that mutually share borders and edges. In this square binary
-matrix, if units i and j share a border, the matrix weight <span class="math inline">\((w_{ij})\)</span> is set to 1; if they do not
-share a border,<span class="math inline">\((w_{ij})\)</span> is set to
-0. The diagonal elements of the weight matrix <span class="math inline">\((w_{ii})\)</span> are also set to 0. In this
-study, Spatial weight of 18 locations(sub-district) was evaluated and
-calculated queen contiguity by using <code>GeoDa (version 1.22)</code>
-as presented in the figure below.</p>
-<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" width="80%">
+<p>ㅤIn the first step, we identify the spatial weight matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>W</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(W)</annotation></semantics></math>
+as a square binary matrix based on queen contiguity. The concept of
+queen contiguity considers adjacent neighbors that mutually share
+borders and edges. In this square binary matrix, if units i and j share
+a border, the matrix weight
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(w_{ij})</annotation></semantics></math>
+is set to 1; if they do not share a
+border,<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(w_{ij})</annotation></semantics></math>
+is set to 0. The diagonal elements of the weight matrix
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>w</mi><mrow><mi>i</mi><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(w_{ii})</annotation></semantics></math>
+are also set to 0. In this study, Spatial weight of 18
+locations(sub-district) was evaluated and calculated queen contiguity by
+using <code>GeoDa (version 1.22)</code> as presented in the figure
+below.</p>
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/weight%20queen.png" alt="Spartial weight" width="80%">
 </div>
 <div class="section level2">
 <h2 id="global-spatial-autocorrelation">Global Spatial Autocorrelation<a class="anchor" aria-label="anchor" href="#global-spatial-autocorrelation"></a>
@@ -191,7 +196,7 @@ clustering of dissimilar values. If the Local Moran’s I is close to
 zero, it suggests that there is no significant spatial clustering at
 that location.</p>
 <p><mark style="font-size: 16px; background-color : lightblue; ">Local
-Moran’s I</mark> statistic equation is <sup><a href="#ref1">1</a></sup>:</p>
+Moran’s I</mark> statistic equation is <sup><a href="#ref2">2</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
   
 $$I_i = \frac{\sum_{j=1}^{n} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$$
@@ -243,15 +248,22 @@ scatter plot</mark></p>
 <p>ㅤThe Moran scatter plot, introduced by Anselin (1996), plots the
 spatially lagged variable on the y-axis and the original variable on the
 x-axis. The slope of the linear fit represents Moran’s I. For a variable
-<span class="math inline">\(Z\)</span> in deviations from the mean and
-row-standardized weights where <span class="math inline">\(S_0\)</span>
-equals the number of observations <span class="math inline">\(N\)</span>, Moran’s I simplifies to<sup><a href="#ref3">3</a></sup>:</p>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+in deviations from the mean and row-standardized weights where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>0</mn></msub><annotation encoding="application/x-tex">S_0</annotation></semantics></math>
+equals the number of observations
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>,
+Moran’s I simplifies to<sup><a href="#ref3">3</a></sup>:</p>
 <div style="font-family: Arial; font-size: 16px;">
 <br>
 $$I = \frac{\sum_i \sum_j w_{ij} z_i z_j}{\sum_i z_i^2} = \frac{\sum_i (z_i \times \sum_j w_{ij} z_j)}{\sum_i z_i^2}$$
 <br>
 </div>
-<p>In this context, the slope of the regression of <span class="math inline">\(\sum_j w_{ij} z_j\)</span> on <span class="math inline">\(z_i\)</span> represents Moran’s I.</p>
+<p>In this context, the slope of the regression of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>z</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\sum_j w_{ij} z_j</annotation></semantics></math>
+on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>i</mi></msub><annotation encoding="application/x-tex">z_i</annotation></semantics></math>
+represents Moran’s I.</p>
 </div>
 <div class="section level2">
 <h2 id="inference">Inference<a class="anchor" aria-label="anchor" href="#inference"></a>
@@ -295,9 +307,7 @@ Computation. Global Spatial Autocorrelation (Lab 5A). Available at: <a href="htt
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
@@ -310,16 +320,16 @@ Computation. Global Spatial Autocorrelation (Lab 5A). Available at: <a href="htt
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
 </div>
 
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>

@@ -1,5 +1,5 @@
 pandoc: 3.1.11
-pkgdown: 2.0.7
+pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
   All-Types-of-Tuberculosis: All-Types-of-Tuberculosis.html
@@ -11,5 +11,7 @@ articles:
   Subdistrict_2014-2023: Subdistrict_2014-2023.html
   Summary: Summary.html
   Time-series_Map: Time-series_Map.html
-last_built: 2024-09-10T02:36Z
-
+last_built: 2024-09-11T12:27Z
+urls:
+  reference: https://azz247.github.io/GeoTB/reference
+  article: https://azz247.github.io/GeoTB/articles

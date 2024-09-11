@@ -1,111 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/articles/All-Types-of-Tuberculosis.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Dashboard.html</loc>
-  </url>
-  <url>
-    <loc>/articles/DashboardIPD.html</loc>
-  </url>
-  <url>
-    <loc>/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>/articles/MapOfCIR.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Pulmonary-Tuberculosis.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Spatial autocorrelation.html</loc>
-  </url>
-  <url>
-    <loc>/articles/SubdistrictCombine.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Subdistrict_2014-2023.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Summary.html</loc>
-  </url>
-  <url>
-    <loc>/articles/test.html</loc>
-  </url>
-  <url>
-    <loc>/articles/Time-series_Map.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>/LocalMoranI.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/root/All-Types-of-Tuberculosis.html</loc>
-  </url>
-  <url>
-    <loc>/root/Combine_subdistrict_MueangKK.html</loc>
-  </url>
-  <url>
-    <loc>/root/GlobalMoranI.html</loc>
-  </url>
-  <url>
-    <loc>/root/LocalMoranI.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo62.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo63.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo64.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo65.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapGeo66.html</loc>
-  </url>
-  <url>
-    <loc>/root/MapOfCrudeIncidence.html</loc>
-  </url>
-  <url>
-    <loc>/root/Pulmonary-Tuberculosis.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_62.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_63.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_64.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_65.html</loc>
-  </url>
-  <url>
-    <loc>/root/SubdistrictMap_66.html</loc>
-  </url>
-  <url>
-    <loc>/root/Time-seriesMap.html</loc>
-  </url>
-  <url>
-    <loc>/root/Time-seriesMap_OPD_KK.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://azz247.github.io/GeoTB/404.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/All-Types-of-Tuberculosis.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/Dashboard.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/DashboardIPD.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/index.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/MapOfCIR.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/Pulmonary-Tuberculosis.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/Spatial autocorrelation.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/SubdistrictCombine.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/Subdistrict_2014-2023.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/Summary.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/test.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/articles/Time-series_Map.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/authors.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/index.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/LICENSE-text.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/LocalMoranI.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/reference/index.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/All-Types-of-Tuberculosis.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/Combine_subdistrict_MueangKK.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/GlobalMoranI.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/LocalMoranI.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/MapGeo62.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/MapGeo63.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/MapGeo64.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/MapGeo65.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/MapGeo66.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/MapOfCrudeIncidence.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/Pulmonary-Tuberculosis.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/SubdistrictMap_62.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/SubdistrictMap_63.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/SubdistrictMap_64.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/SubdistrictMap_65.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/SubdistrictMap_66.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/Time-seriesMap.html</loc></url>
+<url><loc>https://azz247.github.io/GeoTB/root/Time-seriesMap_OPD_KK.html</loc></url>
 </urlset>
+
