@@ -6,13 +6,13 @@ articles:
   Dashboard: Dashboard.html
   DashboardIPD: DashboardIPD.html
   long-toc: long-toc.html
-  MapOfCIR: MapOfCIR.html
   Pulmonary-Tuberculosis: Pulmonary-Tuberculosis.html
   Spatial autocorrelation: Spatial autocorrelation.html
   Subdistrict_2014-2023: Subdistrict_2014-2023.html
   Summary: Summary.html
   Time-series_Map: Time-series_Map.html
-last_built: 2024-09-12T04:52Z
+  TuberculosisPrevalence: TuberculosisPrevalence.html
+last_built: 2024-09-13T04:25Z
 urls:
   reference: https://azz247.github.io/GeoTB/reference
   article: https://azz247.github.io/GeoTB/articles

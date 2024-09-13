@@ -26,8 +26,8 @@ navbar:
       menu:
       - text: Map of tuberculosis patient numbers
         href: articles/Subdistrict_2014-2023.html
-      - text: Map of Crude Incidence Rate
-        href: articles/MapOfCIR.html
+      - text: Tuberculosis Prevalence Map
+        href: articles/TuberculosisPrevalence.html
     articles:
       text: Spatial Autocorrelation
       menu:
