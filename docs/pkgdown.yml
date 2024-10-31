@@ -1,4 +1,4 @@
-pandoc: 3.1.11
+pandoc: '3.2'
 pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
@@ -12,7 +12,7 @@ articles:
   Summary: Summary.html
   Time-series_Map: Time-series_Map.html
   TuberculosisPrevalence: TuberculosisPrevalence.html
-last_built: 2024-09-13T04:25Z
+last_built: 2024-10-31T12:27Z
 urls:
   reference: https://azz247.github.io/GeoTB/reference
   article: https://azz247.github.io/GeoTB/articles
