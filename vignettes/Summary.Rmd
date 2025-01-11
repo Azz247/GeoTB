@@ -1,12 +1,9 @@
 ---
 title: "Methods and Results"
-output: 
+output:
   html_document:
-    code_folding: hide
-    md_extension: +gfm_auto_identifiers
-    toc: True
-    toc_float:
-      collapse: False
+    toc: true
+    toc_float: true
     theme: default
 ---
 
@@ -72,3 +69,5 @@ htmltools::HTML('<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/m
 
 ```
 
+ㅤDuring the study period, the Sub-district with the highest prevalence was Nong Tum, with a mean prevalence of 401.42 (SD = 63.87) per 100,000 population, while the lowest prevalence was observed in Don Han, with a mean prevalence of 166.62 (SD = 47.38) per 100,000 population. See the [Tuberculosis Prevalence Map](https://azz247.github.io/GeoTB/articles/TuberculosisPrevalence.html) for detailed visualization.
+  
