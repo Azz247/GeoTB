@@ -13,14 +13,14 @@ navbar:
     right: github
   components:
     tutorials:
-      text: Dashboard
+      text: Overview
       menu:
-      - text: OPD data
-        href: articles/Dashboard.html
-      - text: IPD data
-        href: articles/DashboardIPD.html
-      - text: Summary
+      - text: Methods and Results
         href: articles/Summary.html
+      - text: OPD Data Dashboard
+        href: articles/Dashboard.html
+      - text: IPD data Dashboard
+        href: articles/DashboardIPD.html
     intro:
       text: Sub-district Map
       menu:
@@ -31,7 +31,7 @@ navbar:
     articles:
       text: Spatial Autocorrelation
       menu:
-      - text: Overview
+      - text: Statistics Used
         href: articles/Spatial autocorrelation.html
       - text: All Types of Tuberculosis
         href: articles/All-Types-of-Tuberculosis.html

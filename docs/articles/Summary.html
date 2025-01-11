@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Overall summary • GeoTB</title>
+<title>Methods and Results • GeoTB</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Overall summary">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Methods and Results">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -40,19 +40,19 @@
       <ul class="nav navbar-nav">
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dashboard
+    Overview
 
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/Dashboard.html">OPD data</a>
+      <a href="../articles/Summary.html">Methods and Results</a>
     </li>
     <li>
-      <a href="../articles/DashboardIPD.html">IPD data</a>
+      <a href="../articles/Dashboard.html">OPD Data Dashboard</a>
     </li>
     <li>
-      <a href="../articles/Summary.html">Summary</a>
+      <a href="../articles/DashboardIPD.html">IPD data Dashboard</a>
     </li>
   </ul>
 </li>
@@ -79,7 +79,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/Spatial%20autocorrelation.html">Overview</a>
+      <a href="../articles/Spatial%20autocorrelation.html">Statistics Used</a>
     </li>
     <li>
       <a href="../articles/All-Types-of-Tuberculosis.html">All Types of Tuberculosis</a>
@@ -109,7 +109,7 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Overall summary</h1>
+      <h1 data-toc-skip>Methods and Results</h1>
             
       
 
@@ -119,74 +119,104 @@
 
     
     
-<p>ㅤAccording to the data visualization, it has been revealed that most
-residential addresses of patients at the time of diagnosis are in Khon
-Kaen, with the majority at the district level being in Mueang Khon Kaen
-District. The proportion of male to female patients is approximately 70
-percent to 30 percent. We also found interesting numbers that reveal
-unexpected trends and information as follows:</p>
+<div class="section level2">
+<h2 id="methods">Methods<a class="anchor" aria-label="anchor" href="#methods"></a>
+</h2>
+<p>ㅤTB case notifications from 2014 to 2023 were collected from medical
+records at Khon Kaen Hospital. In this study, we mapped the number of TB
+case notifications and prevalence using an equal interval break. Spatial
+autocorrelation methods, including Moran’s I and Local Indicators of
+Spatial Association (LISA), were applied to identify global and local
+clustering patterns.</p>
+<div class="section level3">
+<h3 id="study-area">Study area<a class="anchor" aria-label="anchor" href="#study-area"></a>
+</h3>
+<p>ㅤKhon Kaen is located in the central northeastern region of
+Thailand, with geographic coordinates approximately between 15°-17°
+North and 101°-103° East. It spans an area of 10,885.99 km², most of
+which comprises plateaus and low mountains. According to the Thai
+Meteorological Department, the climate in Khon Kaen is divided into
+three seasons: summer (mid-February to mid-May), the rainy season
+(mid-May to mid-October), and winter (mid-October to mid-February).</p>
+<p>ㅤMueang Khon Kaen District, the capital district, has the largest
+area in Khon Kaen and is located in the central part of the province at
+geographic coordinates around 16°26′ North and 102°50′ East, covering an
+area of 953.4 km².</p>
+
+                <br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/KhonKaenV3.png" alt="Map of Khon Kaen Province" width="100%">
+</div>
+</div>
+<div class="section level2">
+<h2 id="result">Result<a class="anchor" aria-label="anchor" href="#result"></a>
+</h2>
+<p>ㅤAccording to the data analysis, the descriptive analysis of
+tuberculosis (TB) case notifications is as follows:</p>
 <ul>
 <li><a href="#number-of-patients">Number of patients</a></li>
-<li><a href="#trend-of-patient-age">Trend of Patient Age</a></li>
-<li><a href="#mortality-trend">Mortality trend</a></li>
+<li><a href="#seasonal-pattern-of-tuberculosis-case-notifications">Seasonal
+pattern of tuberculosis case notifications</a></li>
+<li><a href="#map-of-tb-patient-notifications">Map of TB patient
+notifications</a></li>
+<li><a href="#the-mean-prevalence-of-tb-cases">The mean prevalence of TB
+cases</a></li>
 </ul>
-<p>ㅤFirst of all, we reviewed tuberculosis (TB) case notifications from
-2014 to 2023 provided by the medical information group at Khon Kaen
-Hospital, which includes both outpatient department (OPD) and inpatient
-department (IPD) data. We combined the OPD and IPD data for each year,
-then removed duplicate patients to determine the number of TB incidences
-from 2014 to 2023, as presented in the figure below.</p>
+<div class="section level3">
+<h3 id="number-of-patients">Number of patients<a class="anchor" aria-label="anchor" href="#number-of-patients"></a>
+</h3>
+<p>We reviewed tuberculosis (TB) case notifications from 2014 to 2023,
+obtained from medical records at Khon Kaen Hospital, which included data
+from both the outpatient department (OPD) and inpatient department
+(IPD). The OPD and IPD data were combined for patients residing in
+sub-districts within Mueang Khon Kaen District each year. Duplicate
+patients were removed for each year to determine the number of TB cases
+from 2014 to 2023, as presented below:</p>
 
-                <br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/TrendAllpt.png" alt="Trend of TB cases from 2014 to 2023, showing a peak in 2019 and a decline by 2022" width="80%"><p>ㅤThe figure shows that the number of patients increased from 2,846
-in 2014 to 3,112 in 2016, peaking at 3,177 in 2019 before decreasing to
-a low of 2,349 in 2022. When divided by gender, the trend for male
-patients more closely resembles the overall trend compared to the trend
-for female patients. Unlike the male and total trends, the female
-patient count does not show a sharp peak and decline, but rather a more
-stable and slightly downward trend.</p>
-<div class="section level2">
-<h2 id="number-of-patients">Number of patients<a class="anchor" aria-label="anchor" href="#number-of-patients"></a>
-</h2>
+                <br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/NumberMKK.png" alt="Trend of TB cases from 2014 to 2023, showing a peak in 2019 and a decline by 2022" width="80%"><p>ㅤThere were 10,584 TB patient notifications in Mueang Khon Kaen
+District from October 2013 to September 2023. By fiscal year, the trend
+peaked in 2019 with 1,235 cases and declined to the lowest point in 2022
+with 874 cases. For gender, the trend for male patients more closely
+resembled the overall trend compared to female patients.</p>
+<p>ㅤRegarding the age and gender distribution, male patients
+outnumbered females in every age group. The proportion of males to
+females was approximately 67% to 33%, with 7,109 male patients and 3,475
+female patients. The highest number of TB case notifications was
+observed in the elderly age group (≥65), as shown below:</p>
 
-                <br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/MKK.png" alt="Trend of TB cases in Mueang Khon Kaen District from 2014 to 2023" width="80%"><p>ㅤWhen observing the number of patients in Mueang Khon Kaen District,
-the total number of cases over the 10 years from 2014 to 2023 is 10,585.
-Analyzing the data by year, after removing duplicate patients, the trend
-shows that the peak occurred in 2019 with 1,235 cases, followed by a
-decrease, reaching the lowest point of 875 cases in 2022. ㅤ</p>
-<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/NumberPt_OPD.png" alt="Number of OPD TB patients from 2014 to 2023, showing an increase followed by a decline" width="80%"><p>ㅤOPD data show that the number of patients increased from 2014 to
-2020, followed by a decrease from 2020 to 2023. When divided by gender,
-the overall trend appears to be more influenced by male patients,
-possibly because there are more male patients than female patients.</p>
-
-                <br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/NumberPt_IPD.png" alt="Number of IPD TB patients from 2014 to 2023, showing stability with a slight increase" width="80%"><p>ㅤIPD data show that the number of patients is around 900 to 1,000
-per year, with a slight increase from 2014 to 2019 and a stable trend
-from 2019 to 2023. Similar to the OPD data, the overall trend appears to
-be influenced more by the male trend, while the female trend is
-relatively stable.</p>
+                <br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/AgeandGender.png" alt="Number of TB Case Notifications by Age Group and Gender" width="80%">
 </div>
-<div class="section level2">
-<h2 id="trend-of-patient-age">Trend of Patient Age<a class="anchor" aria-label="anchor" href="#trend-of-patient-age"></a>
-</h2>
-<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/PatientAge_OPD.png" alt="Median age of OPD patients, showing a decrease in both males and females" width="80%"><p>ㅤWe found that the trend in the age of female patients in OPD data
-shows a clear decrease, from a median age of 59 years in 2014 to 54
-years in 2023. The trend for male patients decreased from a median age
-of 56 years in 2015 to 53 years in 2018, then increased to 55 years in
-2022.</p>
-<br><img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/PatientAge_IPD.png" alt="Median age of IPD patients, showing a decrease for females and stability for males" width="80%"><p>ㅤIPD data show that the trend in the age of female patients is
-decreasing, from a median age of 61.5 years in 2014 to 58 years in 2023,
-while the trend in the age of male patients is relatively stable.</p>
+<div class="section level3">
+<h3 id="seasonal-pattern-of-tuberculosis-case-notifications">Seasonal pattern of tuberculosis case notifications<a class="anchor" aria-label="anchor" href="#seasonal-pattern-of-tuberculosis-case-notifications"></a>
+</h3>
+<p>ㅤIn Khon Kaen, the climate is divided into distinct seasons, as
+defined by the Thai Meteorological Department (TMD, 2020). This appears
+to influence the seasonal pattern of TB patient notifications. Peaks
+were observed during the winter months (mid-October to mid-February),
+while the lowest notifications occurred during the summer months
+(mid-February to mid-May).</p>
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/Ptbymonth.png" alt="Number of TB case notification by month" width="80%">
 </div>
-<div class="section level2">
-<h2 id="mortality-trend">Mortality trend<a class="anchor" aria-label="anchor" href="#mortality-trend"></a>
-</h2>
-<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/Death.png" alt="Trend of TB-related deaths, showing an increase from 2020 to 2023, especially among males" width="80%"><p>ㅤWe have data on the number of all-cause deaths among tuberculosis
-patients in the hospital each year from IPD data. This shows that the
-number of deaths in the hospital was relatively stable from 2014 to
-2020, but there is an increasing trend from 49 persons per year in 2020
-to 95 persons per year in 2023. When divided by gender, we see an
-interesting trend where the increase in overall mortality from 2021 to
-2023 is mainly driven by the male trend, while the female trend shows
-only a slight increase from 2020 to 2023.</p>
+<div class="section level3">
+<h3 id="map-of-tb-patient-notifications">Map of TB patient notifications<a class="anchor" aria-label="anchor" href="#map-of-tb-patient-notifications"></a>
+</h3>
+<p>ㅤTB patient notifications were mapped using an equal interval break
+of 50 patients, with color palettes representing the number of TB
+patient notifications in each sub-district. The data were mapped by
+fiscal year. Most years demonstrated that patient notifications were
+concentrated in Nai Mueang and the surrounding sub-districts throughout
+the study period. See the <a href="https://azz247.github.io/GeoTB/articles/Subdistrict_2014-2023.html">Map
+of TB patient notifications</a> for detailed visualization.</p>
+</div>
+<div class="section level3">
+<h3 id="the-mean-prevalence-of-tb-cases">The mean prevalence of TB cases<a class="anchor" aria-label="anchor" href="#the-mean-prevalence-of-tb-cases"></a>
+</h3>
+<p>ㅤThe mean prevalence of TB cases during the study period (2014–2023)
+was 289.93 (SD = 87.42) per 100,000 population. Prevalence trends showed
+an increase from 2014, peaking in 2020 at 329.01 (SD = 99.83) per
+100,000 population, before declining in 2022 to 243.65 (SD = 76.98) per
+100,000 population. A slight increase was observed in 2023, as shown
+below:</p>
+<img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/Prevalence.png" alt="Mean Prevalence of TB Cases" width="80%">
+</div>
 </div>
   </div>
 
