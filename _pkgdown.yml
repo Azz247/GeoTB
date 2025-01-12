@@ -19,7 +19,7 @@ navbar:
         href: articles/Summary.html
       - text: OPD Data Dashboard
         href: articles/Dashboard.html
-      - text: IPD data Dashboard
+      - text: IPD Data Dashboard
         href: articles/DashboardIPD.html
     intro:
       text: Sub-district Map

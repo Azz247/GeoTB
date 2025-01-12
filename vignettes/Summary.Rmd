@@ -16,7 +16,9 @@ knitr::opts_chunk$set(
 )
 ```
 ## Methods
-ㅤTB case notifications from October 2013 to September 2023 (fiscal years 2014 to 2023) were collected from medical records at Khon Kaen Hospital. In this study, we mapped the number of TB case notifications and their prevalence using an equal interval classification method. Spatial autocorrelation techniques, including Moran’s I and Local Indicators of Spatial Association (LISA), were applied to identify global and local clustering patterns.
+ㅤTB case notifications from October 2013 to September 2023 (fiscal years 2014–2023) were collected from Khon Kaen Hospital's medical records, covering both OPD and IPD data. The OPD and IPD data were combined for patients residing in sub-districts within Mueang Khon Kaen District each year. Duplicate patients were removed annually to determine the number of TB cases from 2014 to 2023.
+
+ㅤIn this study, we mapped the number of TB case notifications and their prevalence using the equal interval classification method. Spatial autocorrelation techniques, including Moran’s I and Local Indicators of Spatial Association (LISA), were applied to identify global and local clustering patterns.
 
 ### Study area
 ㅤKhon Kaen is located in the central northeastern region of Thailand, with geographic coordinates approximately between 15°-17° North and 101°-103° East. It spans an area of 10,885.99 km², most of which comprises plateaus and low mountains. According to the Thai Meteorological Department, the climate in Khon Kaen is divided into three seasons: summer (mid-February to mid-May), the rainy season (mid-May to mid-October), and winter (mid-October to mid-February).
@@ -37,14 +39,12 @@ htmltools::HTML('
 - [The mean prevalence of TB cases](#the-mean-prevalence-of-tb-cases)
 
 ### Number of patients
-  We reviewed tuberculosis (TB) case notifications from 2014 to 2023, obtained from medical records at Khon Kaen Hospital, which included data from both the outpatient department (OPD) and inpatient department (IPD). The OPD and IPD data were combined for patients residing in sub-districts within Mueang Khon Kaen District each year. Duplicate patients were removed for each year to determine the number of TB cases from 2014 to 2023, as presented below:
+ㅤThere were 10,584 TB patient notifications in Mueang Khon Kaen District from October 2013 to September 2023. By fiscal year, the trend peaked in 2019 with 1,235 cases and declined to its lowest point in 2022 with 874 cases. Regarding gender, the trend for male patients more closely resembled the overall trend compared to female patients, as presented below:
 ```{r,echo=FALSE}
 htmltools::HTML('
                 <br>
                 <img src="https://raw.githubusercontent.com/Azz247/GeoTB/main/man/figures/NumberMKK.png" alt="Trend of TB cases from 2014 to 2023, showing a peak in 2019 and a decline by 2022" width="90%" />')
 ```
-
-ㅤThere were 10,584 TB patient notifications in Mueang Khon Kaen District from October 2013 to September 2023. By fiscal year, the trend peaked in 2019 with 1,235 cases and declined to the lowest point in 2022 with 874 cases. For gender, the trend for male patients more closely resembled the overall trend compared to female patients.
 
 ㅤRegarding the age and gender distribution, male patients outnumbered females in every age group. The proportion of males to females was approximately 67% to 33%, with 7,109 male patients and 3,475 female patients. The highest number of TB case notifications was observed in the elderly age group (≥65), as shown below:
 ```{r,echo=FALSE}
