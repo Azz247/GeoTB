@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 ## Methods
-ㅤTB case notifications from October 2013 to September 2023 (fiscal years 2014–2023) were collected from Khon Kaen Hospital's medical records, covering both OPD and IPD data. The OPD and IPD data were combined for patients residing in sub-districts within Mueang Khon Kaen District each year. Duplicate patients were removed annually to determine the number of TB cases from 2014 to 2023.
+ㅤTB case notifications from October 2013 to September 2023 (fiscal years 2014–2023) were collected from Khon Kaen Hospital's medical records, covering both [OPD](https://azz247.github.io/GeoTB/articles/Dashboard.html) and [IPD](https://azz247.github.io/GeoTB/articles/DashboardIPD.html) data. The OPD and IPD data were combined for patients residing in sub-districts within Mueang Khon Kaen District each year. Duplicate patients were removed annually to determine the number of TB cases from 2014 to 2023.
 
 ㅤIn this study, we mapped the number of TB case notifications and their prevalence using the equal interval classification method. Spatial autocorrelation techniques, including Moran’s I and Local Indicators of Spatial Association (LISA), were applied to identify global and local clustering patterns.
 
@@ -34,7 +34,7 @@ htmltools::HTML('
 ㅤAccording to the data analysis, the descriptive analysis of tuberculosis (TB) case notifications is as follows:
 
 - [Number of patients](#number-of-patients)
-- [Seasonal pattern of tuberculosis case notifications](#seasonal-pattern-of-tuberculosis-case-notifications)
+- [Seasonal pattern ](#seasonal-pattern-of-tuberculosis-case-notifications)
 - [Map of TB patient notifications](#map-of-tb-patient-notifications)
 - [The mean prevalence of TB cases](#the-mean-prevalence-of-tb-cases)
 
