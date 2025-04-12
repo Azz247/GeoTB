@@ -9,7 +9,6 @@ navbar:
     - intro
     - articles
     - news
-    - reference
     right: github
   components:
     tutorials:
@@ -40,6 +39,5 @@ navbar:
     news:
       text: Time-series Map
       href: articles/Time-series_Map.html
-    reference:
-      text: Reference
-      href: reference/index.html
+template:
+  bootstrap: 3
