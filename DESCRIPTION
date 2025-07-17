@@ -1,6 +1,6 @@
 Package: GeoTB
 Title: Spatial Pattern Detection of Tuberculosis at the Sub-District Level in Mueang Khon Kaen District
-Version: 1.0.1
+Version: 1.0.0.1
 Authors@R: 
     person("Narongsak", "Ngamchaiyaphum", , "Narongsak158@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
