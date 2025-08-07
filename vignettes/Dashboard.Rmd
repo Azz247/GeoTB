@@ -32,7 +32,7 @@ htmltools::HTML('<style>
 </style>
 
 <div class="dashboard"> 
-<iframe src="https://lookerstudio.google.com/embed/reporting/4f2a4c02-d93c-4de1-a9c9-15622f9e6d88/page/p_1rm66nx2cd">
-</iframe>
+<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/4f2a4c02-d93c-4de1-a9c9-15622f9e6d88/page/p_1rm66nx2cd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 </div>')
 ```
+

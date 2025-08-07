@@ -3,7 +3,7 @@ Title: Spatial Pattern Detection of Tuberculosis at the Sub-District Level in Mu
 Version: 1.0.0.1
 Authors@R: 
     person("Narongsak", "Ngamchaiyaphum", , "Narongsak158@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0009-0001-2607-0053"))
 Description: Spatial Pattern Detection of Tuberculosis at the Sub-District Level in Mueang Khon Kaen District, Cross-sectional Data 10 years (2014-2023)
 License: MIT + file LICENSE
 Encoding: UTF-8
