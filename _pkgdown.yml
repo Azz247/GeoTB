@@ -12,14 +12,8 @@ navbar:
     right: github
   components:
     tutorials:
-      text: Overview
-      menu:
-      - text: Methods and Results
-        href: articles/Summary.html
-      - text: OPD Data Dashboard
-        href: articles/Dashboard.html
-      - text: IPD Data Dashboard
-        href: articles/DashboardIPD.html
+      text: Methods and Results
+      href: articles/Summary.html
     intro:
       text: Sub-district Map
       menu:
@@ -37,7 +31,13 @@ navbar:
       - text: Pulmonary Tuberculosis
         href: articles/Pulmonary-Tuberculosis.html
     news:
-      text: Time-series Map
-      href: articles/Time-series_Map.html
+      text: Appendix (TH)
+      menu:
+      - text: OPD Data Dashboard
+        href: articles/Dashboard.html
+      - text: IPD Data Dashboard
+        href: articles/DashboardIPD.html
+      - text: Time-series Map
+        href: articles/Time-series_Map.html
 template:
   bootstrap: 3
